@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact me! marius93rm - Photographer</title>
+  <title>Contact Marius | Photographer in Rome &amp; Brasov</title>
   <meta name="description"
-    content="How to contact a photographer in Rome and Brasov, specializing in events, portraits, and motorcycle photography. Photography services for birthdays, corporate events, and opera singers. Contact me for a free quote." />
+    content="Contact Marius for event, portrait, motorcycle, and automotive photography projects in Rome, Brasov, and other locations on request." />
+  <link rel="canonical" href="https://marius93rm.github.io/contact.html">
 
   <!-- Favicons -->
   <link rel="icon"
@@ -16,14 +17,13 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
 
 <body class="contact-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <svg aria-hidden="true" class="svg-sprite" width="0" height="0" focusable="false" xmlns="http://www.w3.org/2000/svg">
     <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M14.5 4l1.6 2H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.9l1.6-2h5z"/><circle cx="12" cy="13" r="4"/></symbol>
     <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></symbol>
@@ -43,25 +43,25 @@
         <h1 class="sitename">marius93rm - photographer</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
+      <nav id="navmenu" class="navmenu" aria-label="Primary navigation">
+        <ul id="primary-navigation">
           <li><a href="index.html">Home<br></a></li>
           <li><a href="people.html">People</a></li>
           <li><a href="wheels.html">Wheels</a></li>
           <li><a href="world.html">World</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
         </ul>
-        <button class="mobile-nav-toggle d-xl-none" type="button" aria-label="Open navigation" aria-expanded="false"><svg class="icon icon-menu" aria-hidden="true"><use href="#icon-menu"></use></svg></button>
+        <button class="mobile-nav-toggle d-xl-none" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><svg class="icon icon-menu" aria-hidden="true"><use href="#icon-menu"></use></svg></button>
       </nav>
 
       <div class="header-social-links">
-        <a href="https://www.instagram.com/marius93rm/" class="instagram"><svg class="icon icon-instagram" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+        <a href="https://www.instagram.com/marius93rm/" class="instagram" aria-label="Visit Marius on Instagram"><svg class="icon icon-instagram" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
       </div>
 
     </div>
   </header>
 
-  <main class="main">
+  <main id="main-content" class="main">
 
     <!-- Page Title -->
     <div class="page-title">
@@ -94,7 +94,7 @@
                 <div>
                   <h3>Call</h3>
                   <p><a href="tel:+393930607643">+39 3930607643</a></p>
-                  <p><a href="tel:+4074096939">+40 774096939</a></p>
+                  <p><a href="tel:+40774096939">+40 774 096 939</a></p>
                 </div>
               </div>
             </div><!-- End Info Item -->
@@ -116,11 +116,13 @@
           <div class="row gy-4">
 
             <div class="col-md-12 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+              <label for="contact-email">Email address</label>
+              <input type="email" class="form-control" id="contact-email" name="email" placeholder="Your Email" autocomplete="email" required="">
             </div>
 
             <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              <label for="contact-message">Message</label>
+              <textarea class="form-control" id="contact-message" name="message" rows="6" placeholder="Message" required=""></textarea>
             </div>
 
             <div class="col-md-12 text-center">
@@ -140,7 +142,7 @@
 
     <div class="container">
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.instagram.com/marius93rm/"><svg class="icon icon-instagram" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+        <a href="https://www.instagram.com/marius93rm/" aria-label="Visit Marius on Instagram"><svg class="icon icon-instagram" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -156,8 +158,6 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><svg class="icon icon-arrow-up" aria-hidden="true"><use href="#icon-arrow-up"></use></svg></a>
 <!-- Vendor JS Files -->
 
-
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

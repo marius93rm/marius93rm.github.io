@@ -23,6 +23,7 @@
   --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #27a776; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-foreground-color: #000000; /* Accessible text and icon color on accent backgrounds */
   --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -75,6 +76,32 @@ a {
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 100000;
+  padding: 10px 16px;
+  color: var(--accent-foreground-color);
+  background: var(--accent-color);
+  border-radius: 4px;
+  transform: translateY(-160%);
+}
+
+.skip-link:hover,
+.skip-link:focus {
+  color: var(--accent-foreground-color);
+  transform: translateY(0);
 }
 
 h1,
@@ -364,7 +391,7 @@ h6 {
   .navmenu a .icon:hover,
   .navmenu a:focus .icon:hover {
     background-color: var(--accent-color);
-    color: var(--contrast-color);
+    color: var(--accent-foreground-color);
   }
 
   .navmenu a:hover,
@@ -376,7 +403,7 @@ h6 {
   .navmenu .active .icon,
   .navmenu .active:focus .icon {
     background-color: var(--accent-color);
-    color: var(--contrast-color);
+    color: var(--accent-foreground-color);
     transform: rotate(180deg);
   }
 
@@ -493,7 +520,7 @@ h6 {
 
 .scroll-top .icon {
   font-size: 24px;
-  color: var(--default-color);
+  color: var(--accent-foreground-color);
   line-height: 0;
 }
 
@@ -527,7 +554,7 @@ h6 {
 }
 
 .page-title .heading .cta-btn {
-  color: var(--default-color);
+  color: var(--accent-foreground-color);
   background: var(--accent-color);
   font-weight: 400;
   font-size: 14px;
@@ -676,7 +703,7 @@ section,
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color);
+  color: var(--accent-foreground-color);
   background: var(--accent-color);
   font-weight: 400;
   font-size: 14px;
@@ -733,12 +760,15 @@ section,
   line-height: 0;
 }
 
-.gallery .gallery-item:hover .gallery-links {
+.gallery .gallery-item:hover .gallery-links,
+.gallery .gallery-item:focus-within .gallery-links {
   opacity: 1;
 }
 
 .gallery .gallery-item:hover .preview-link,
-.gallery .gallery-item:hover .details-link {
+.gallery .gallery-item:hover .details-link,
+.gallery .gallery-item:focus-within .preview-link,
+.gallery .gallery-item:focus-within .details-link {
   margin-top: 0;
 }
 
@@ -821,13 +851,19 @@ section,
 
 .contact .info-item:hover .icon {
   background: var(--accent-color);
-  color: var(--contrast-color);
+  color: var(--accent-foreground-color);
 }
 
 @media (max-width: 575px) {
   .contact .contact-form {
     padding: 20px;
   }
+}
+
+.contact .contact-form label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .contact .contact-form input[type=text],
@@ -855,7 +891,7 @@ section,
 }
 
 .contact .contact-form button[type=submit] {
-  color: var(--default-color);
+  color: var(--accent-foreground-color);
   background: var(--accent-color);
   font-weight: 400;
   font-size: 14px;
@@ -871,4 +907,19 @@ section,
 
 .contact .contact-form button[type=submit]:hover {
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 10%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
