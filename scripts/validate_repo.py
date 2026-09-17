@@ -51,20 +51,19 @@ BROWSER_SKILL_MARKERS = {
 
 EXPECTED_SITE_METADATA = {
     "index.html": {
-        "title": "marius93rm - Photographer - Events, Portraits, Motorcycles",
+        "title": "Marius | Photographer for Events, Portraits & Motorcycles",
         "description": (
-            "Professional photographer in Rome and Brasov, specializing in events, portraits, and motorcycle "
-            "photography. Photography services for birthdays, corporate events, and opera singers. Contact me "
-            "for a free quote."
+            "Event, portrait, motorcycle and automotive photography by Marius in Rome, Brașov and beyond. "
+            "View the portfolio or enquire about your project."
         ),
         "canonical": "https://marius93rm.github.io/",
         "current": "index.html",
     },
     "people.html": {
-        "title": "People & Portrait Photography | Marius",
+        "title": "People & Portrait Photography in Rome | Marius",
         "description": (
-            "People and portrait photography by Marius in Rome and Brasov, featuring candid moments, events, "
-            "musicians, and editorial-style portraits."
+            "Candid event coverage and portrait photography by Marius in Rome, Brașov and beyond. Explore people, "
+            "artists and live moments, then discuss your project."
         ),
         "canonical": "https://marius93rm.github.io/people.html",
         "current": "people.html",
@@ -72,8 +71,8 @@ EXPECTED_SITE_METADATA = {
     "wheels.html": {
         "title": "Motorcycle & Automotive Photography | Marius",
         "description": (
-            "Motorcycle and automotive photography by Marius in Rome and Brasov, from road and trail action to "
-            "detailed portraits of bikes and cars."
+            "Motorcycle and automotive photography by Marius in Rome, Brașov and beyond. Explore road, workshop "
+            "and action photographs of bikes and cars, then enquire."
         ),
         "canonical": "https://marius93rm.github.io/wheels.html",
         "current": "wheels.html",
@@ -81,17 +80,17 @@ EXPECTED_SITE_METADATA = {
     "world.html": {
         "title": "Travel, Landscape & Street Photography | Marius",
         "description": (
-            "Travel, landscape, and street photography by Marius, featuring mountains, coastlines, architecture, "
-            "and everyday scenes."
+            "Travel, landscape and street photography by Marius, with photographs of Rome, architecture, coastlines, "
+            "mountains and everyday life. Explore the collection."
         ),
         "canonical": "https://marius93rm.github.io/world.html",
         "current": "world.html",
     },
     "contact.html": {
-        "title": "Contact Marius | Photographer in Rome & Brasov",
+        "title": "Contact Marius | Photographer in Rome & Brașov",
         "description": (
-            "Contact Marius for event, portrait, motorcycle, and automotive photography projects in Rome, "
-            "Brasov, and other locations on request."
+            "Contact Marius for event, portrait, motorcycle or automotive photography in Rome, Brașov and beyond. "
+            "Include your date, location and project details."
         ),
         "canonical": "https://marius93rm.github.io/contact.html",
         "current": "contact.html",
