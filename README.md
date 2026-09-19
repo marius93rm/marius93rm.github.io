@@ -52,7 +52,7 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 5. Courses and teaching carousel.
 6. Selected work gallery for real websites and apps.
 7. Simple Formspree contact form.
-8. Footer with contact anchor and required TemplatesJungle credit.
+8. Footer with LinkedIn link and contact anchor.
 
 The source template supplied by TemplatesJungle was used as a structural reference for the hero, fixed navigation and asymmetric grid. The gaming copy, orange neon palette, remote demo images, Material Symbols and CDN dependencies were removed.
 
@@ -169,7 +169,7 @@ Before each handoff:
 - Run Lighthouse for Performance, Accessibility, Best Practices and SEO.
 - Validate JSON-LD with Schema Markup Validator.
 - Confirm no demo copy, gaming images, fake metrics or placeholder links remain in a release build.
-- Confirm the TemplatesJungle attribution remains in the footer while using the free template license.
+- Confirm the footer links point to the current LinkedIn profile and contact section.
 
 ## Deployment
 
@@ -177,4 +177,4 @@ The repository is `marius93rm/marius93rm.github.io`, so the site can be served f
 
 ## Third-party notices
 
-See [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md) for the NovaShift source, TemplatesJungle attribution requirement and the Manrope font license.
+See [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md) for the NovaShift source, license details and the Manrope font license.
