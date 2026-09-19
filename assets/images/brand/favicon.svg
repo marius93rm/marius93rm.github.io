@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Marius Minia Developer</title>
+  <rect width="64" height="64" rx="16" fill="#F5F8FC"/>
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="#205B8F" stroke-width="3"/>
+  <path d="M17 43V21h5l10 12 10-12h5v22h-5V29l-10 12-10-12v14z" fill="#132238"/>
+</svg>
