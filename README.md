@@ -12,7 +12,8 @@ The first version is intentionally a visual and technical foundation. It does no
 - Light editorial tech visual system.
 - Homepage routes are stable through `#services`, `#teaching`, `#work` and `#contact`.
 - Formspree is structurally ready, but the real form endpoint still needs to be inserted.
-- The portrait, technology logos, course cards and project previews are explicit content slots.
+- The portrait, additional technology logos, course cards and project previews are explicit content slots; the current background strip contains only verified LinkedIn signals.
+- The selected background strip and LinkedIn links use information verified from the public LinkedIn profile.
 
 ## Design direction
 
@@ -46,7 +47,7 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 
 1. Header and primary navigation.
 2. Hero with personal portrait slot and primary contact action.
-3. Technology stack slot directly below the hero.
+3. Selected professional background directly below the hero, with room for confirmed technology logos later.
 4. Services with websites as the featured service.
 5. Courses and teaching carousel.
 6. Selected work gallery for real websites and apps.
@@ -56,6 +57,12 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 The source template supplied by TemplatesJungle was used as a structural reference for the hero, fixed navigation and asymmetric grid. The gaming copy, orange neon palette, remote demo images, Material Symbols and CDN dependencies were removed.
 
 ## Content contracts for future agents
+
+### LinkedIn-derived background
+
+The public profile at <https://www.linkedin.com/in/mariusminia> identifies Marius as working freelance / across multiple institutions and lists the Apple Developer Academy @Unina Federico II (2019-2020), with a focus on Swift, iOS/macOS development and UX/UI/product design. It also lists Apple Teacher and Google's fundamentals of digital marketing training.
+
+These facts are used as concise credibility signals, not as a replacement for a complete CV. Do not infer current employers, client names, dates or project outcomes beyond the profile and the user's confirmed brief. The business positioning remains Romania-focused because that is the current project brief.
 
 ### Portrait
 

@@ -41,7 +41,7 @@ Do not introduce additional accent hues, social-network blue, neon orange, purpl
 
 ## 4. Component styling
 
-- **Navigation:** sticky, translucent light surface with a 1px bottom border. Maximum desktop height is 72px. Collapse to a full-width mobile menu below 768px.
+- **Navigation:** sticky, translucent light surface with a 1px bottom border. Maximum desktop height is 72px. Collapse to a full-width mobile menu below 768px. Keep LinkedIn as a secondary outline action and “Call Marius” as the primary action.
 - **Buttons:** 12px radius, accent fill for primary action, white text, minimum 48px height, tactile active state and no outer glow.
 - **Text links:** underlined or visibly directional, never a low-contrast ghost link.
 - **Cards:** use only where hierarchy requires a surface. Use 12px radius, structural border and cool tinted shadow.
@@ -56,7 +56,7 @@ Do not introduce additional accent hues, social-network blue, neon orange, purpl
 - Use CSS Grid for asymmetric splits and galleries.
 - Collapse all multi-column sections to one column below 768px.
 - Keep the hero split on desktop: copy left, portrait right.
-- Keep technology logos in a separate band below the hero, not as a cluttered trust strip inside the hero.
+- Keep technology logos or verified background signals in a separate band below the hero, not as a cluttered trust strip inside the hero. Use a restrained list of signals such as Apple Developer Academy, Swift/iOS/macOS, UX/UI and credentials; do not turn it into an exhaustive CV.
 - Make websites the visually dominant service, with supporting services arranged as a vertical group.
 - Use a featured portfolio item plus smaller supporting items. Do not use an empty bento cell.
 - Use `min-height: 100dvh` for the desktop hero, never `100vh` as the only height rule.
@@ -73,7 +73,7 @@ Do not introduce additional accent hues, social-network blue, neon orange, purpl
 
 ## 7. Content rules
 
-- Use only information supplied or verified by Marius.
+- Use only information supplied or verified by Marius. Public LinkedIn data may supply concise background signals, but it must not be used to infer current employers, clients, project results or personal contact details.
 - Do not invent clients, course titles, reviews, numbers, prices, awards, technologies or project results.
 - Prefer short, concrete sentences over marketing filler.
 - Avoid words such as “seamless”, “next-gen”, “elevate” and “unleash”.
