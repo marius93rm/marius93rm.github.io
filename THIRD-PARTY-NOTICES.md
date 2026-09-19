@@ -19,3 +19,7 @@ The local font file at `assets/fonts/Manrope-Variable.ttf` is from the Manrope p
 Project source: <https://github.com/googlefonts/manrope>
 
 License text: <https://scripts.sil.org/OFL>
+
+## Simple Icons
+
+Technology badge icons are loaded from the Simple Icons CDN at <https://cdn.simpleicons.org/>. The icon project and its usage guidance are documented at <https://github.com/simple-icons/simple-icons>; review its legal disclaimer and the individual brand guidelines before changing or adding icons.

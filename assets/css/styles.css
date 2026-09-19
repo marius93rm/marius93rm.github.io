@@ -1115,6 +1115,192 @@ h1 {
   --tag-border: #579130;
 }
 
+.technology-tags li[data-tech] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.technology-tags li[data-tech]::before {
+  width: 0.78rem;
+  height: 0.78rem;
+  flex: 0 0 0.78rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.technology-tags li[data-tech="react"]::before {
+  background-image: url("https://cdn.simpleicons.org/react/102a33?viewbox=auto");
+}
+
+.technology-tags li[data-tech="reactnative"]::before {
+  background-image: url("https://cdn.simpleicons.org/react/61dafb?viewbox=auto");
+}
+
+.technology-tags li[data-tech="storybook"]::before {
+  background-image: url("https://cdn.simpleicons.org/storybook/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="typescript"]::before {
+  background-image: url("https://cdn.simpleicons.org/typescript/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="figma"]::before {
+  background-image: url("https://cdn.simpleicons.org/figma/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="csharp"]::before {
+  width: auto;
+  flex-basis: auto;
+  color: currentColor;
+  content: "C#";
+  font-size: 0.58rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.technology-tags li[data-tech="dotnet"]::before {
+  background-image: url("https://cdn.simpleicons.org/dotnet/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="php"]::before {
+  background-image: url("https://cdn.simpleicons.org/php/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="laravel"]::before {
+  background-image: url("https://cdn.simpleicons.org/laravel/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="vue"]::before {
+  background-image: url("https://cdn.simpleicons.org/vuedotjs/0d3b2a?viewbox=auto");
+}
+
+.technology-tags li[data-tech="html5"]::before {
+  background-image: url("https://cdn.simpleicons.org/html5/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="cplusplus"]::before {
+  background-image: url("https://cdn.simpleicons.org/cplusplus/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="git"]::before {
+  background-image: url("https://cdn.simpleicons.org/git/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="word"]::before {
+  width: auto;
+  flex-basis: auto;
+  color: currentColor;
+  content: "W";
+  font-size: 0.62rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.technology-tags li[data-tech="powerpoint"]::before {
+  width: auto;
+  flex-basis: auto;
+  color: currentColor;
+  content: "P";
+  font-size: 0.62rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.technology-tags li[data-tech="excel"]::before {
+  width: auto;
+  flex-basis: auto;
+  color: currentColor;
+  content: "X";
+  font-size: 0.62rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.technology-tags li[data-tech="microsoft365"]::before {
+  width: auto;
+  flex-basis: auto;
+  color: currentColor;
+  content: "M";
+  font-size: 0.62rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.technology-tags li[data-tech="javascript"]::before {
+  background-image: url("https://cdn.simpleicons.org/javascript/111111?viewbox=auto");
+}
+
+.technology-tags li[data-tech="node"]::before {
+  background-image: url("https://cdn.simpleicons.org/nodedotjs/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="jquery"]::before {
+  background-image: url("https://cdn.simpleicons.org/jquery/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="bootstrap"]::before {
+  background-image: url("https://cdn.simpleicons.org/bootstrap/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="mysql"]::before {
+  background-image: url("https://cdn.simpleicons.org/mysql/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="postgresql"]::before {
+  background-image: url("https://cdn.simpleicons.org/postgresql/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="mongodb"]::before {
+  background-image: url("https://cdn.simpleicons.org/mongodb/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="mariadb"]::before {
+  background-image: url("https://cdn.simpleicons.org/mariadb/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="cassandra"]::before {
+  background-image: url("https://cdn.simpleicons.org/apachecassandra/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="kafka"]::before {
+  background-image: url("https://cdn.simpleicons.org/apachekafka/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="docker"]::before {
+  background-image: url("https://cdn.simpleicons.org/docker/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="python"]::before {
+  background-image: url("https://cdn.simpleicons.org/python/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="pandas"]::before {
+  background-image: url("https://cdn.simpleicons.org/pandas/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="numpy"]::before {
+  background-image: url("https://cdn.simpleicons.org/numpy/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="selenium"]::before {
+  background-image: url("https://cdn.simpleicons.org/selenium/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="angular"]::before {
+  background-image: url("https://cdn.simpleicons.org/angular/ffffff?viewbox=auto");
+}
+
+.technology-tags li[data-tech="java"]::before {
+  background-image: url("https://cdn.simpleicons.org/openjdk/241500?viewbox=auto");
+}
+
+.technology-tags li[data-tech="spring"]::before {
+  background-image: url("https://cdn.simpleicons.org/spring/12300a?viewbox=auto");
+}
+
 @keyframes teaching-slider-nudge {
   0%,
   100% {

@@ -13,7 +13,7 @@ The first version is intentionally a visual and technical foundation. It does no
 - Homepage routes are stable through `#services`, `#teaching`, `#work`, `#background` and `#contact`.
 - Formspree is structurally ready, but the real form endpoint still needs to be inserted.
 - The portrait, additional technology logos, course cards and project previews are explicit content slots.
-- Teaching technology tags use the compact Shields.io README visual language and Simple Icons brand colors, rendered locally in CSS so they do not add remote image requests.
+- Teaching technology tags use the compact Shields.io README visual language, with Simple Icons brand colors and icons loaded from the official Simple Icons CDN.
 - The education and certification strip uses verified CV data and appears before the contact section. The extracted public CV content is stored in [`data/cv.json`](data/cv.json).
 - The selected professional background and LinkedIn links use information verified from the supplied CV and public LinkedIn profile.
 
