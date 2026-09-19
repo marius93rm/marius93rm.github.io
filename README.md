@@ -48,7 +48,7 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 
 1. Header and primary navigation.
 2. Hero with personal portrait slot and primary contact action.
-3. Education and certifications strip before contact, with the verified highlights ordered as Sapienza, Apple Developer Academy, Apple Teacher and Entrepreneurship Course.
+3. Education and certifications strip before contact, with the verified highlights ordered chronologically as Sapienza (2014), Entrepreneurship Course (2018), Apple Developer Academy (2019) and Apple Teacher (2020).
 4. Services with websites as the featured service.
 5. Courses and teaching carousel.
 6. Selected work gallery for real websites and apps.
@@ -61,7 +61,7 @@ The source template supplied by TemplatesJungle was used as a structural referen
 
 ### CV-derived education and experience
 
-The supplied `Marius-Minia-CV2026ENG.pdf` is the source for the public education, certification and professional-training data in [`data/cv.json`](data/cv.json). The JSON keeps the original date text, institutions, locations, focus keywords and descriptive copy for later content passes. The homepage highlights the following in the requested order: Computer Engineering studies at Sapienza University of Rome (2014), Apple Developer Academy Programme (2019), Apple Teacher certification (2020), and Entrepreneurship Course at SC SIAB Development Srl (2018).
+The supplied `Marius-Minia-CV2026ENG.pdf` is the source for the public education, certification and professional-training data in [`data/cv.json`](data/cv.json). The JSON keeps the original date text, institutions, locations, focus keywords and descriptive copy for later content passes. The homepage highlights the verified studies and certifications chronologically: Computer Engineering studies at Sapienza University of Rome (2014), Entrepreneurship Course at SC SIAB Development Srl (2018), Apple Developer Academy Programme (2019), and Apple Teacher certification (2020).
 
 The public JSON and footer publish the confirmed phone number and email address as clickable `tel:` and `mailto:` links. Date of birth, gender and driving-licence information remain excluded from the public site.
 

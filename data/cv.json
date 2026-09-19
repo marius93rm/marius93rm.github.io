@@ -31,6 +31,24 @@
   },
   "educationAndCertifications": [
     {
+      "id": "itc-matteucci-diploma",
+      "type": "diploma",
+      "year": 2013,
+      "dateText": "2013",
+      "title": "Diploma in Accounting and Programming",
+      "institution": "I.T.C. Matteucci",
+      "location": "Rome, Italy",
+      "result": "95/100",
+      "focus": [
+        "Java",
+        "Visual Basic",
+        "Microsoft Office",
+        "Excel",
+        "Accounting"
+      ],
+      "description": "In addition to the standard curriculum of a Technical Commercial Institute, I was introduced to Java and Visual Basic. The accounting programme also incorporated modern tools such as the Microsoft Office suite, particularly Excel, alongside traditional double-entry bookkeeping. I graduated with a score of 95/100."
+    },
+    {
       "id": "sapienza-computer-engineering",
       "type": "education",
       "year": 2014,
@@ -62,6 +80,17 @@
       "websiteLabel": "Computer Engineering studies · Rome"
     },
     {
+      "id": "entrepreneurship-course",
+      "type": "course",
+      "year": 2018,
+      "dateText": "2018",
+      "title": "Entrepreneurship Course",
+      "institution": "SC SIAB Development Srl",
+      "location": "Cluj, Romania",
+      "description": "Entrepreneurship course completed at SC SIAB Development Srl in Cluj, Romania.",
+      "websiteLabel": "SC SIAB Development Srl · Cluj, Romania"
+    },
+    {
       "id": "apple-developer-academy",
       "type": "programme",
       "year": 2019,
@@ -83,27 +112,6 @@
       "websiteLabel": "University of Naples Federico II & Apple · Swift, iOS/macOS, UX/UI"
     },
     {
-      "id": "apple-teacher",
-      "type": "certification",
-      "year": 2020,
-      "dateText": "2020",
-      "title": "Apple Teacher",
-      "issuer": "Apple",
-      "description": "Apple Teacher certification.",
-      "websiteLabel": "Certification · Apple"
-    },
-    {
-      "id": "entrepreneurship-course",
-      "type": "course",
-      "year": 2018,
-      "dateText": "2018",
-      "title": "Entrepreneurship Course",
-      "institution": "SC SIAB Development Srl",
-      "location": "Cluj, Romania",
-      "description": "Entrepreneurship course completed at SC SIAB Development Srl in Cluj, Romania.",
-      "websiteLabel": "SC SIAB Development Srl · Cluj, Romania"
-    },
-    {
       "id": "google-digital-training",
       "type": "certification",
       "year": 2019,
@@ -116,22 +124,14 @@
       "description": "Certification in the fundamentals of online marketing."
     },
     {
-      "id": "itc-matteucci-diploma",
-      "type": "diploma",
-      "year": 2013,
-      "dateText": "2013",
-      "title": "Diploma in Accounting and Programming",
-      "institution": "I.T.C. Matteucci",
-      "location": "Rome, Italy",
-      "result": "95/100",
-      "focus": [
-        "Java",
-        "Visual Basic",
-        "Microsoft Office",
-        "Excel",
-        "Accounting"
-      ],
-      "description": "In addition to the standard curriculum of a Technical Commercial Institute, I was introduced to Java and Visual Basic. The accounting programme also incorporated modern tools such as the Microsoft Office suite, particularly Excel, alongside traditional double-entry bookkeeping. I graduated with a score of 95/100."
+      "id": "apple-teacher",
+      "type": "certification",
+      "year": 2020,
+      "dateText": "2020",
+      "title": "Apple Teacher",
+      "issuer": "Apple",
+      "description": "Apple Teacher certification.",
+      "websiteLabel": "Certification · Apple"
     }
   ],
   "experience": [
