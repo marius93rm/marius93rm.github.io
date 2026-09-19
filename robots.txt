@@ -1,3 +1,7 @@
+# Keep the public homepage available to search and answer engines.
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: *
 Allow: /
 

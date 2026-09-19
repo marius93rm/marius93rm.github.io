@@ -1,0 +1,28 @@
+# Marius Minia Developer
+
+> Marius Minia is a web developer in Romania who builds business websites and helps teams solve problems in existing web projects.
+
+## Services
+
+- [Website development](https://marius93rm.github.io/#services): Responsive business websites with clear navigation, useful content, UX/UI and SEO foundations.
+- [Development help](https://marius93rm.github.io/#services): Support for bugs, features and technical decisions in existing web projects.
+- [UX/UI and software quality](https://marius93rm.github.io/#services): Figma, design systems, testing, TDD, refactoring and code review.
+
+## Technology expertise
+
+- [Technology experience](https://marius93rm.github.io/#teaching): React, JavaScript, Node.js, Laravel, PHP, C#, .NET, Java, Spring, Python, SQL, MySQL, PostgreSQL, MongoDB, Docker, Angular, Vue.js, TypeScript, Storybook and Figma.
+
+## Project fit
+
+- [Ways to work together](https://marius93rm.github.io/#work): Launch a new business website, fix or extend an existing project, or make a technical decision with clearer context.
+- [Frequently asked questions](https://marius93rm.github.io/#faq): Answers about websites, existing stacks, supported technologies and how to start.
+
+## Background
+
+- [Technical background](https://marius93rm.github.io/#background): Computer Engineering studies at Sapienza University of Rome, the Apple Developer Academy and professional certifications.
+
+## Contact
+
+- [Contact Marius](https://marius93rm.github.io/#contact): Discuss a website, web application or technical problem.
+- Phone: [+39 393 060 7643](tel:+393930607643)
+- Email: [marius93rm@gmail.com](mailto:marius93rm@gmail.com)

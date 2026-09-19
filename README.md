@@ -52,7 +52,7 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 3. Education and certifications strip before contact, with the verified highlights ordered chronologically as Sapienza (2014), Entrepreneurship Course (2018), Apple Developer Academy (2019) and Apple Teacher (2020).
 4. Services with websites as the featured service.
 5. Teaching experience slider with real course details and technology tags.
-6. Selected work gallery for real websites and apps.
+6. Ways to work together for new websites, existing projects and technical guidance.
 7. Simple Formspree contact form.
 8. Footer with four icon-only actions for LinkedIn, email, telephone and the contact form.
 
@@ -94,7 +94,7 @@ Teaching cards in `index.html` use the verified instructor entries from `data/cv
 
 ### Selected work
 
-Replace the `work-slot` placeholders with real entries. Each project should include:
+The current `work-slot` cards describe honest project entry points rather than invented portfolio work. Replace them with real entries only when the projects are approved for publication. Each project should include:
 
 - an optimized screenshot or preview image
 - accurate dimensions to prevent layout shift
@@ -141,6 +141,12 @@ rg -n "marius93rm\.github\.io" .
 When Romanian or Italian translations are ready, add real localized pages first, then add `hreflang` links and their URLs to the sitemap. Do not add alternate-language tags for pages that do not exist.
 
 Technical SEO cannot replace useful final copy. The next content pass should add a clear value proposition, service detail, real proof and location context without keyword stuffing.
+
+## AI search visibility
+
+The homepage keeps its important answers in crawlable, visible HTML and includes matching JSON-LD for the website, person, professional service and FAQ content. `robots.txt` explicitly allows `OAI-SearchBot`, following [OpenAI's crawler guidance](https://help.openai.com/en/articles/9237897-chatgpt-search), while the canonical URL and sitemap keep the public page easy to discover.
+
+[`llms.txt`](llms.txt) is included as a small, experimental index of the site. It is not a ranking control: [Google's generative AI guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) says Search does not require or use special AI-readable files. Keep it concise and update it when the public offer changes.
 
 ## Local development
 
