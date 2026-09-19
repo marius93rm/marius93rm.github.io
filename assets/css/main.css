@@ -1114,19 +1114,6 @@ section,
   border-color: var(--accent-color);
 }
 
-.footer .credits {
-  margin-top: 1.25rem;
-  color: var(--muted-color);
-  text-align: left;
-}
-
-.footer .credits a {
-  min-height: 44px;
-  display: inline-flex;
-  align-items: center;
-  color: var(--default-color) !important;
-}
-
 .scroll-top {
   position: fixed;
   right: var(--page-gutter);
@@ -1266,7 +1253,7 @@ section,
   }
 
   .about .content {
-    padding-top: 2.75rem;
+    padding-top: 0;
     padding-left: 0;
   }
 
@@ -1285,9 +1272,6 @@ section,
     row-gap: 0;
   }
 
-  .footer .credits {
-    max-width: 30rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
