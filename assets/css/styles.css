@@ -883,20 +883,236 @@ h1 {
 }
 
 .technology-tags li {
+  --tag-bg: var(--surface-muted);
+  --tag-fg: var(--ink-soft);
+  --tag-border: var(--border);
   padding: 0.32rem 0.52rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface-muted);
-  color: var(--ink-soft);
+  border: 1px solid var(--tag-border);
+  border-radius: 4px;
+  background: var(--tag-bg);
+  color: var(--tag-fg);
   font-size: 0.68rem;
   font-weight: 700;
   line-height: 1.2;
+  box-shadow: inset 0 -1px rgba(19, 34, 56, 0.1);
 }
 
 .teaching-card--featured .technology-tags li {
-  border-color: rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.82);
+  --tag-bg: rgba(255, 255, 255, 0.08);
+  --tag-fg: rgba(255, 255, 255, 0.82);
+  --tag-border: rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.18);
+}
+
+/* Shields.io / Simple Icons-inspired brand colors, rendered locally. */
+.technology-tags li[data-tech="react"] {
+  --tag-bg: #61dafb;
+  --tag-fg: #102a33;
+  --tag-border: #3bb7d8;
+}
+
+.technology-tags li[data-tech="reactnative"] {
+  --tag-bg: #20232a;
+  --tag-fg: #61dafb;
+  --tag-border: #3e4653;
+}
+
+.technology-tags li[data-tech="storybook"] {
+  --tag-bg: #ff4785;
+  --tag-fg: #ffffff;
+  --tag-border: #df2b69;
+}
+
+.technology-tags li[data-tech="typescript"] {
+  --tag-bg: #3178c6;
+  --tag-fg: #ffffff;
+  --tag-border: #2465aa;
+}
+
+.technology-tags li[data-tech="figma"] {
+  --tag-bg: #f24e1e;
+  --tag-fg: #ffffff;
+  --tag-border: #d63c12;
+}
+
+.technology-tags li[data-tech="csharp"] {
+  --tag-bg: #239120;
+  --tag-fg: #ffffff;
+  --tag-border: #1a7218;
+}
+
+.technology-tags li[data-tech="dotnet"] {
+  --tag-bg: #512bd4;
+  --tag-fg: #ffffff;
+  --tag-border: #3f20b0;
+}
+
+.technology-tags li[data-tech="php"] {
+  --tag-bg: #777bb4;
+  --tag-fg: #ffffff;
+  --tag-border: #5f6397;
+}
+
+.technology-tags li[data-tech="laravel"] {
+  --tag-bg: #ff2d20;
+  --tag-fg: #ffffff;
+  --tag-border: #d92218;
+}
+
+.technology-tags li[data-tech="vue"] {
+  --tag-bg: #42b883;
+  --tag-fg: #0d3b2a;
+  --tag-border: #2f9d6e;
+}
+
+.technology-tags li[data-tech="html5"] {
+  --tag-bg: #e34f26;
+  --tag-fg: #ffffff;
+  --tag-border: #bd3d1b;
+}
+
+.technology-tags li[data-tech="cplusplus"] {
+  --tag-bg: #00599c;
+  --tag-fg: #ffffff;
+  --tag-border: #004477;
+}
+
+.technology-tags li[data-tech="git"] {
+  --tag-bg: #f05032;
+  --tag-fg: #ffffff;
+  --tag-border: #ca3b22;
+}
+
+.technology-tags li[data-tech="word"] {
+  --tag-bg: #2b579a;
+  --tag-fg: #ffffff;
+  --tag-border: #214276;
+}
+
+.technology-tags li[data-tech="powerpoint"] {
+  --tag-bg: #b7472a;
+  --tag-fg: #ffffff;
+  --tag-border: #92351f;
+}
+
+.technology-tags li[data-tech="excel"] {
+  --tag-bg: #217346;
+  --tag-fg: #ffffff;
+  --tag-border: #185333;
+}
+
+.technology-tags li[data-tech="microsoft365"] {
+  --tag-bg: #5e5e5e;
+  --tag-fg: #ffffff;
+  --tag-border: #444444;
+}
+
+.technology-tags li[data-tech="javascript"] {
+  --tag-bg: #f7df1e;
+  --tag-fg: #111111;
+  --tag-border: #d9c300;
+}
+
+.technology-tags li[data-tech="node"] {
+  --tag-bg: #5fa04e;
+  --tag-fg: #ffffff;
+  --tag-border: #4a823c;
+}
+
+.technology-tags li[data-tech="jquery"] {
+  --tag-bg: #0769ad;
+  --tag-fg: #ffffff;
+  --tag-border: #055487;
+}
+
+.technology-tags li[data-tech="bootstrap"] {
+  --tag-bg: #7952b3;
+  --tag-fg: #ffffff;
+  --tag-border: #5f3f8d;
+}
+
+.technology-tags li[data-tech="mysql"] {
+  --tag-bg: #4479a1;
+  --tag-fg: #ffffff;
+  --tag-border: #35617f;
+}
+
+.technology-tags li[data-tech="postgresql"] {
+  --tag-bg: #4169e1;
+  --tag-fg: #ffffff;
+  --tag-border: #3153b7;
+}
+
+.technology-tags li[data-tech="mongodb"] {
+  --tag-bg: #47a248;
+  --tag-fg: #ffffff;
+  --tag-border: #398039;
+}
+
+.technology-tags li[data-tech="mariadb"] {
+  --tag-bg: #003545;
+  --tag-fg: #ffffff;
+  --tag-border: #002631;
+}
+
+.technology-tags li[data-tech="cassandra"] {
+  --tag-bg: #1287b1;
+  --tag-fg: #ffffff;
+  --tag-border: #0d6b8b;
+}
+
+.technology-tags li[data-tech="kafka"] {
+  --tag-bg: #231f20;
+  --tag-fg: #ffffff;
+  --tag-border: #111010;
+}
+
+.technology-tags li[data-tech="docker"] {
+  --tag-bg: #2496ed;
+  --tag-fg: #ffffff;
+  --tag-border: #1675bd;
+}
+
+.technology-tags li[data-tech="python"] {
+  --tag-bg: #3776ab;
+  --tag-fg: #ffffff;
+  --tag-border: #2b5e89;
+}
+
+.technology-tags li[data-tech="pandas"] {
+  --tag-bg: #150458;
+  --tag-fg: #ffffff;
+  --tag-border: #0c0235;
+}
+
+.technology-tags li[data-tech="numpy"] {
+  --tag-bg: #013243;
+  --tag-fg: #ffffff;
+  --tag-border: #00242f;
+}
+
+.technology-tags li[data-tech="selenium"] {
+  --tag-bg: #43b02a;
+  --tag-fg: #ffffff;
+  --tag-border: #358c21;
+}
+
+.technology-tags li[data-tech="angular"] {
+  --tag-bg: #dd0031;
+  --tag-fg: #ffffff;
+  --tag-border: #b40028;
+}
+
+.technology-tags li[data-tech="java"] {
+  --tag-bg: #ed8b00;
+  --tag-fg: #241500;
+  --tag-border: #c27500;
+}
+
+.technology-tags li[data-tech="spring"] {
+  --tag-bg: #6db33f;
+  --tag-fg: #12300a;
+  --tag-border: #579130;
 }
 
 @keyframes teaching-slider-nudge {
