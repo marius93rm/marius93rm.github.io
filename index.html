@@ -226,50 +226,234 @@
             <p>I teach full-stack programming, web development, databases, software quality, Agile methods, UX/UI design and digital tools through hands-on exercises, project work, code reviews and guided debugging.</p>
           </div>
 
-          <section
-            class="carousel"
-            data-carousel
-            data-content-slot="courses"
-            aria-roledescription="carousel"
-            aria-label="Courses taught"
-          >
-            <div class="carousel-viewport" tabindex="0" data-carousel-viewport>
-              <ol class="carousel-track" data-carousel-track>
-                <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="UX/UI Specialisation at Boolean, 2025/26">
-                  <p class="carousel-meta">2025/26 · Boolean</p>
-                  <h3>UX/UI Specialisation</h3>
-                  <p>Design systems, Atomic Design, Material Design, React, Storybook, TypeScript, Figma prototyping and developer handoff.</p>
-                </li>
-                <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="C# and .NET at ADECCO Formazione, 2025">
-                  <p class="carousel-meta">2025 · ADECCO Formazione</p>
-                  <h3>C# and .NET</h3>
-                  <p>SOLID principles, design patterns, TDD, software architecture, asynchronous programming and object-oriented programming.</p>
-                </li>
-                <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="React at Boolean, 2024">
-                  <p class="carousel-meta">2024 · Boolean</p>
-                  <h3>React</h3>
-                  <p>Components, hooks, state management, APIs, React Router, dynamic interfaces, JavaScript and Node.js.</p>
-                </li>
-                <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="MySQL and database design at ELIS, 2022">
-                  <p class="carousel-meta">2022 · ELIS</p>
-                  <h3>MySQL and database design</h3>
-                  <p>SQL, conceptual and entity-relationship modelling, performance, MongoDB, PostgreSQL and relational databases.</p>
-                </li>
-              </ol>
-              <p class="carousel-empty" data-carousel-empty>
-                Teaching entries will be added here.
+          <div class="teaching-slider" data-teaching-slider>
+            <div class="teaching-slider-bar">
+              <p class="teaching-slider-hint">
+                <span class="teaching-slider-hint-arrows" aria-hidden="true">←&nbsp;→</span>
+                <span>Explore teaching</span>
               </p>
+              <div class="teaching-slider-controls" data-teaching-controls hidden>
+                <button class="icon-button" type="button" data-teaching-prev aria-controls="teaching-experience-viewport" aria-label="Previous teaching card">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button class="icon-button" type="button" data-teaching-next aria-controls="teaching-experience-viewport" aria-label="Next teaching card">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
             </div>
-            <div class="carousel-controls" data-carousel-controls hidden>
-              <button class="icon-button" type="button" data-carousel-prev aria-label="Previous course">
-                <span aria-hidden="true">←</span>
-              </button>
-              <p class="carousel-status" data-carousel-status aria-live="polite"></p>
-              <button class="icon-button" type="button" data-carousel-next aria-label="Next course">
-                <span aria-hidden="true">→</span>
-              </button>
+
+            <div id="teaching-experience-viewport" class="teaching-viewport" data-teaching-viewport tabindex="0" role="region" aria-label="Teaching experience cards">
+              <div class="teaching-grid" data-content-slot="courses" data-content-source="cv">
+            <article class="teaching-card teaching-card--featured">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2025">2025/26</time></p>
+                  <h3>UX/UI Specialisation</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">01</span>
+              </header>
+              <p class="teaching-role">UX/UI Specialisation Instructor</p>
+              <p class="teaching-institution">Boolean</p>
+              <p class="teaching-description">Advanced module on UX and UI design: design systems, Atomic Design, Material Design, React &amp; Storybook, TypeScript, Figma prototyping and developer handoff.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>Design systems</li><li>Atomic Design</li><li>Material Design</li><li>React</li><li>Storybook</li><li>TypeScript</li><li>Figma</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2025">2025</time></p>
+                  <h3>C# and .NET</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">02</span>
+              </header>
+              <p class="teaching-role">C# and .NET Instructor</p>
+              <p class="teaching-institution">ADECCO Formazione SRL</p>
+              <p class="teaching-description">Advanced Forma.Temp course focused on SOLID principles, design patterns, TDD, software architecture, asynchronous programming and OOP.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>C#</li><li>.NET</li><li>SOLID</li><li>TDD</li><li>Architecture</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2025">2025</time></p>
+                  <h3>Unit Testing and TDD</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">03</span>
+              </header>
+              <p class="teaching-role">Unit Testing and TDD Instructor</p>
+              <p class="teaching-institution">Laser Romae</p>
+              <p class="teaching-description">Software quality course covering unit testing, TDD, mocking, static code analysis, refactoring and code coverage.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>Unit testing</li><li>TDD</li><li>Mocking</li><li>Refactoring</li><li>Code coverage</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2024">2024</time></p>
+                  <h3>React</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">04</span>
+              </header>
+              <p class="teaching-role">React Instructor</p>
+              <p class="teaching-institution">Boolean</p>
+              <p class="teaching-description">Course on React components, hooks, state management, APIs, React Router, dynamic interfaces and hands-on projects.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>React</li><li>JavaScript</li><li>Node.js</li><li>Hooks</li><li>APIs</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2023">2023</time></p>
+                  <h3>Laravel</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">05</span>
+              </header>
+              <p class="teaching-role">Laravel Instructor</p>
+              <p class="teaching-institution">Boolean</p>
+              <p class="teaching-description">Laravel module covering PHP, routing, controllers, ORM, authentication, APIs and MVC architecture, including complete application development.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>PHP</li><li>Laravel</li><li>MVC</li><li>APIs</li><li>Vue.js</li><li>HTML5</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2023">2023</time></p>
+                  <h3>C++</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">06</span>
+              </header>
+              <p class="teaching-role">C++ Instructor</p>
+              <p class="teaching-institution">Umanaforma</p>
+              <p class="teaching-description">Developer academy covering C++, object-oriented and functional programming, Git, Scrum and teamwork.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>C++</li><li>OOP</li><li>Git</li><li>Scrum</li><li>Functional programming</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2023">2023</time></p>
+                  <h3>Microsoft 365</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">07</span>
+              </header>
+              <p class="teaching-role">Microsoft 365 Instructor</p>
+              <p class="teaching-institution">Italian Motorcycling Federation</p>
+              <p class="teaching-description">Course focused on advanced Word, PowerPoint and Excel, the latest productivity features and collaboration tools.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>Word</li><li>PowerPoint</li><li>Excel</li><li>Microsoft 365</li><li>Collaboration</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2022">2022</time></p>
+                  <h3>JavaScript and databases</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">08</span>
+              </header>
+              <p class="teaching-role">JavaScript and Relational Database Instructor</p>
+              <p class="teaching-institution">Almaviva</p>
+              <p class="teaching-description">Modules on JavaScript syntax, front-end integration, jQuery, Bootstrap, MySQL database creation and querying, and PostgreSQL.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>JavaScript</li><li>jQuery</li><li>Bootstrap</li><li>MySQL</li><li>PostgreSQL</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2022">2022</time></p>
+                  <h3>MySQL and database design</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">09</span>
+              </header>
+              <p class="teaching-role">MySQL Database Instructor</p>
+              <p class="teaching-institution">ELIS</p>
+              <p class="teaching-description">Course on SQL and database design: conceptual and ER modelling, queries and performance, relational and non-relational databases.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>SQL</li><li>MySQL</li><li>MongoDB</li><li>NoSQL</li><li>PostgreSQL</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2022">2022</time></p>
+                  <h3>Databases and software design</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">10</span>
+              </header>
+              <p class="teaching-role">Instructor</p>
+              <p class="teaching-institution">Capoweb.it sas</p>
+              <p class="teaching-description">Forma.Temp vocational courses for corporate clients on databases, software design, Apache Kafka, Scrum and Docker.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>MariaDB</li><li>CassandraDB</li><li>Kafka</li><li>Scrum</li><li>Docker</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2021">2021</time></p>
+                  <h3>Artificial Intelligence</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">11</span>
+              </header>
+              <p class="teaching-role">Artificial Intelligence Instructor</p>
+              <p class="teaching-institution">SOSE</p>
+              <p class="teaching-description">Advanced employee training course on Python, machine learning, deep learning, data science, pandas and NumPy.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>Python</li><li>Machine learning</li><li>Deep learning</li><li>pandas</li><li>NumPy</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2021">2021</time></p>
+                  <h3>Web development and mobile</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">12</span>
+              </header>
+              <p class="teaching-role">Instructor</p>
+              <p class="teaching-institution">Istituto Europeo Terzo Millennio</p>
+              <p class="teaching-description">Remote teaching for several academies covering Python, Selenium, CMS, databases, front-end development, Angular, Kafka and React Native.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>Python</li><li>Selenium</li><li>Angular</li><li>Git</li><li>Kafka</li><li>React Native</li>
+              </ul>
+            </article>
+
+            <article class="teaching-card">
+              <header class="teaching-card-header">
+                <div>
+                  <p class="teaching-date"><time datetime="2020">2020</time></p>
+                  <h3>Java and Spring</h3>
+                </div>
+                <span class="teaching-card-index" aria-hidden="true">13</span>
+              </header>
+              <p class="teaching-role">IT Instructor</p>
+              <p class="teaching-institution">Begear for ATOS · Rome</p>
+              <p class="teaching-description">Courses on object-oriented programming, Java, Spring Framework, UML, Agile, Design Thinking, SQL and REST.</p>
+              <ul class="technology-tags" aria-label="Technologies and topics covered">
+                <li>Java</li><li>Spring</li><li>UML</li><li>Agile</li><li>SQL</li><li>REST</li>
+              </ul>
+            </article>
+              </div>
             </div>
-          </section>
+          </div>
         </div>
       </section>
 
@@ -395,24 +579,41 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© 2026 Marius Minia Developer</p>
-        <div class="footer-links">
+        <div class="footer-actions" role="group" aria-label="Contact links">
           <a
-            class="button button--small button--secondary"
+            class="footer-icon-button"
             href="https://www.linkedin.com/in/mariusminia"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            title="LinkedIn"
           >
-            LinkedIn <span aria-hidden="true">↗</span>
+            <span class="footer-icon footer-icon--linkedin" aria-hidden="true">in</span>
           </a>
-          <a class="footer-contact-link" href="tel:+393930607643">
-            <span class="footer-contact-icon" aria-hidden="true">☎</span>
-            <span>+39 393 060 7643</span>
+          <a
+            class="footer-icon-button"
+            href="mailto:marius93rm@gmail.com"
+            aria-label="Email Marius"
+            title="Email"
+          >
+            <span class="footer-icon" aria-hidden="true">✉</span>
           </a>
-          <a class="footer-contact-link" href="mailto:marius93rm@gmail.com">
-            <span class="footer-contact-icon" aria-hidden="true">✉</span>
-            <span>marius93rm@gmail.com</span>
+          <a
+            class="footer-icon-button"
+            href="tel:+393930607643"
+            aria-label="Call Marius"
+            title="Telefono"
+          >
+            <span class="footer-icon" aria-hidden="true">☎</span>
           </a>
-          <a href="#contact">Contact</a>
+          <a
+            class="footer-icon-button footer-icon-button--primary"
+            href="#contact"
+            aria-label="Contact Marius"
+            title="Contatta"
+          >
+            <span class="footer-icon" aria-hidden="true">✎</span>
+          </a>
         </div>
       </div>
     </footer>

@@ -3,8 +3,6 @@
 
   document.documentElement.classList.add("js");
 
-  const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-
   const menuButton = document.querySelector("[data-menu-toggle]");
   const primaryNavigation = document.querySelector("#primary-navigation");
 
@@ -38,65 +36,55 @@
     });
   }
 
-  document.querySelectorAll("[data-carousel]").forEach((carousel) => {
-    const viewport = carousel.querySelector("[data-carousel-viewport]");
-    const track = carousel.querySelector("[data-carousel-track]");
-    const emptyState = carousel.querySelector("[data-carousel-empty]");
-    const controls = carousel.querySelector("[data-carousel-controls]");
-    const previousButton = carousel.querySelector("[data-carousel-prev]");
-    const nextButton = carousel.querySelector("[data-carousel-next]");
-    const status = carousel.querySelector("[data-carousel-status]");
+  const teachingSlider = document.querySelector("[data-teaching-slider]");
 
-    if (!viewport || !track || !emptyState || !controls || !previousButton || !nextButton || !status) {
-      return;
-    }
+  if (teachingSlider) {
+    const viewport = teachingSlider.querySelector("[data-teaching-viewport]");
+    const track = teachingSlider.querySelector("[data-content-slot='courses']");
+    const controls = teachingSlider.querySelector("[data-teaching-controls]");
+    const previousButton = teachingSlider.querySelector("[data-teaching-prev]");
+    const nextButton = teachingSlider.querySelector("[data-teaching-next]");
+    const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-    const slides = Array.from(track.children);
+    if (viewport && track && controls && previousButton && nextButton) {
+      const getScrollAmount = () => {
+        const firstCard = track.querySelector(".teaching-card");
+        const trackStyles = window.getComputedStyle(track);
+        const gap = Number.parseFloat(trackStyles.columnGap || trackStyles.gap) || 16;
 
-    if (slides.length === 0) {
-      controls.hidden = true;
-      emptyState.hidden = false;
-      return;
-    }
+        return (firstCard?.getBoundingClientRect().width || viewport.clientWidth * 0.8) + gap;
+      };
 
-    let currentIndex = 0;
-    controls.hidden = false;
-    emptyState.hidden = true;
+      const updateControls = () => {
+        const maxScrollLeft = viewport.scrollWidth - viewport.clientWidth;
+        previousButton.disabled = viewport.scrollLeft <= 2;
+        nextButton.disabled = viewport.scrollLeft >= maxScrollLeft - 2;
+      };
 
-    const updateCarousel = (nextIndex) => {
-      currentIndex = Math.max(0, Math.min(nextIndex, slides.length - 1));
-      const currentSlide = slides[currentIndex];
+      const scrollSlider = (direction) => {
+        viewport.scrollBy({
+          left: direction * getScrollAmount(),
+          behavior: reducedMotionQuery.matches ? "auto" : "smooth"
+        });
+      };
 
-      slides.forEach((slide, index) => {
-        slide.setAttribute("aria-current", index === currentIndex ? "true" : "false");
+      controls.hidden = false;
+      previousButton.addEventListener("click", () => scrollSlider(-1));
+      nextButton.addEventListener("click", () => scrollSlider(1));
+      viewport.addEventListener("scroll", updateControls, { passive: true });
+      viewport.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+          event.preventDefault();
+          scrollSlider(-1);
+        }
+
+        if (event.key === "ArrowRight") {
+          event.preventDefault();
+          scrollSlider(1);
+        }
       });
-
-      currentSlide.scrollIntoView({
-        behavior: reducedMotionQuery.matches ? "auto" : "smooth",
-        block: "nearest",
-        inline: "start"
-      });
-
-      previousButton.disabled = currentIndex === 0;
-      nextButton.disabled = currentIndex === slides.length - 1;
-      status.textContent = `${currentIndex + 1} of ${slides.length}`;
-    };
-
-    previousButton.addEventListener("click", () => updateCarousel(currentIndex - 1));
-    nextButton.addEventListener("click", () => updateCarousel(currentIndex + 1));
-
-    viewport.addEventListener("keydown", (event) => {
-      if (event.key === "ArrowLeft") {
-        event.preventDefault();
-        updateCarousel(currentIndex - 1);
-      }
-
-      if (event.key === "ArrowRight") {
-        event.preventDefault();
-        updateCarousel(currentIndex + 1);
-      }
-    });
-
-    updateCarousel(0);
-  });
+      window.addEventListener("resize", updateControls);
+      updateControls();
+    }
+  }
 })();

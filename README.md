@@ -25,7 +25,7 @@ The design system is documented in [`.stitch/DESIGN.md`](.stitch/DESIGN.md). The
 Design dials:
 
 - `DESIGN_VARIANCE: 6` - controlled asymmetry without experimental layouts.
-- `MOTION_INTENSITY: 4` - restrained transitions and user-controlled carousel movement.
+- `MOTION_INTENSITY: 4` - restrained hover, focus and slider-direction transitions.
 - `VISUAL_DENSITY: 3` - generous spacing and a small number of focused sections.
 
 ## Palette and typography
@@ -50,10 +50,10 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 2. Hero with personal portrait slot and primary contact action.
 3. Education and certifications strip before contact, with the verified highlights ordered chronologically as Sapienza (2014), Entrepreneurship Course (2018), Apple Developer Academy (2019) and Apple Teacher (2020).
 4. Services with websites as the featured service.
-5. Courses and teaching carousel.
+5. Teaching experience slider with real course details and technology tags.
 6. Selected work gallery for real websites and apps.
 7. Simple Formspree contact form.
-8. Footer with LinkedIn link and contact anchor.
+8. Footer with four icon-only actions for LinkedIn, email, telephone and the contact form.
 
 The source template supplied by TemplatesJungle was used as a structural reference for the hero, fixed navigation and asymmetric grid. The gaming copy, orange neon palette, remote demo images, Material Symbols and CDN dependencies were removed.
 
@@ -89,15 +89,7 @@ Add only technologies Marius confirms. Prefer local SVG assets from a reputable 
 
 ### Courses
 
-Add one `<li class="carousel-slide">` per real course inside `[data-carousel-track]`. Keep the existing carousel contract:
-
-- `role="group"`
-- `aria-roledescription="slide"`
-- a useful `aria-label`
-- visible title, institution or context, and date only when supplied
-- no fake course titles, dates or attendee numbers
-
-The JavaScript supports an empty track, keyboard arrows and visible previous/next controls. It does not autoplay.
+Teaching cards in `index.html` use the verified instructor entries from `data/cv.json`. Each card includes the course title, date, instructor position, institution, descriptive copy and a compact list of technologies or topics. Add new cards only for confirmed entries; do not invent course titles, dates or attendee numbers.
 
 ### Selected work
 
@@ -169,7 +161,7 @@ Before each handoff:
 - Test the page at 360, 768, 1024 and 1440 CSS pixels.
 - Test the mobile navigation with keyboard and Escape.
 - Test all links and section anchors.
-- Test the carousel with keyboard arrows after real course cards are added.
+- Test the teaching slider at desktop, tablet and mobile widths, including touch/trackpad scrolling and keyboard arrows.
 - Test focus visibility and form labels.
 - Test with `prefers-reduced-motion: reduce`.
 - Test with JavaScript disabled.
