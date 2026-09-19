@@ -27,3 +27,11 @@ Technology badge icons are loaded from the Simple Icons CDN at <https://cdn.simp
 ## Devicon
 
 The C# logo in the teaching repositories section is loaded from the versioned Devicon CDN URL at <https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/>. Devicon is documented at <https://github.com/devicons/devicon> and distributed under its project license.
+
+## Tabler Icons
+
+The local SVG sprite at `assets/icons/tabler-icons.svg` contains outline icons from Tabler Icons v3.47.0. Tabler Icons are available under the MIT License.
+
+Project source: <https://github.com/tabler/tabler-icons>
+
+License: <https://tabler.io/license>
