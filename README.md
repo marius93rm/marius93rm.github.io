@@ -12,7 +12,7 @@ The first version is intentionally a visual and technical foundation. It does no
 - Light editorial tech visual system.
 - Homepage routes are stable through `#services`, `#teaching`, `#work`, `#background` and `#contact`.
 - Formspree is structurally ready, but the real form endpoint still needs to be inserted.
-- The portrait, additional technology logos, course cards and project previews are explicit content slots.
+- The approved portrait and six selected desktop homepage screenshots are integrated in the homepage; the three teaching repositories have a separate highlighted card group with language logos.
 - Teaching technology tags use the compact Shields.io README visual language, with Simple Icons brand colors and icons loaded from the official Simple Icons CDN.
 - The education and certification strip uses verified CV data and appears before the contact section. The extracted public CV content is stored in [`data/cv.json`](data/cv.json).
 - The selected professional background and LinkedIn links use information verified from the supplied CV and public LinkedIn profile.
@@ -25,9 +25,11 @@ The design system is documented in [`.stitch/DESIGN.md`](.stitch/DESIGN.md). The
 
 Design dials:
 
-- `DESIGN_VARIANCE: 6` - controlled asymmetry without experimental layouts.
+- `DESIGN_VARIANCE: 7` - editorial asymmetry without experimental layouts.
 - `MOTION_INTENSITY: 4` - restrained hover, focus and slider-direction transitions.
-- `VISUAL_DENSITY: 3` - generous spacing and a small number of focused sections.
+- `VISUAL_DENSITY: 4` - generous spacing with a more information-rich project gallery.
+
+The project gallery uses stable CSS Grid Level 1/2 primitives. It intentionally does not use the experimental CSS Grid Level 3 masonry/grid-lanes syntax.
 
 ## Palette and typography
 
@@ -52,7 +54,7 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 3. Education and certifications strip before contact, with the verified highlights ordered chronologically as Sapienza (2014), Entrepreneurship Course (2018), Apple Developer Academy (2019) and Apple Teacher (2020).
 4. Services with websites as the featured service.
 5. Teaching experience slider with real course details and technology tags.
-6. Ways to work together for new websites, existing projects and technical guidance.
+6. Selected projects, followed by a separate group for teaching repositories.
 7. Simple Formspree contact form.
 8. Footer with four icon-only actions for LinkedIn, email, telephone and the contact form.
 
@@ -74,7 +76,7 @@ These facts are used as concise credibility signals, not as a replacement for a 
 
 ### Portrait
 
-Place the approved personal photo in `assets/images/portrait/` and update the portrait figure in `index.html` to use a real `<picture>` or `<img>` element with:
+The approved personal photo is stored in `assets/images/portrait/` and the portrait figure in `index.html` uses a real `<picture>` element with:
 
 - descriptive filename
 - accurate `width` and `height`
@@ -94,16 +96,18 @@ Teaching cards in `index.html` use the verified instructor entries from `data/cv
 
 ### Selected work
 
-The current `work-slot` cards describe honest project entry points rather than invented portfolio work. Replace them with real entries only when the projects are approved for publication. Each project should include:
+The `#work` section contains the approved project entries supplied for this content pass:
 
-- an optimized screenshot or preview image
-- accurate dimensions to prevent layout shift
-- descriptive `alt` text
-- a short factual description
-- a live project URL when available
-- no fake dashboards built from nested divs
+- Spațiu360, a bilingual virtual-tour website for properties and businesses around Brașov.
+- unaSquadraFortissimi, a repo-local Codex and Paseo template with agents, skills and workflows.
+- TikTok Cleaner, a browser-console utility for cleaning non-mutual follows.
+- Depurazioneacqua.EU, a service website for water purifier sales, installation and assistance in Rome and Lazio.
+- Photography portfolio for events, portraits, motorcycles and cars.
+- BikeTrain România, the product interface from the `travelBike` repository.
 
-Use a real screenshot or a real visual asset. Do not use remote placeholder photography for portfolio work.
+Each project includes a 1280 × 800 desktop homepage screenshot, accurate dimensions to prevent layout shift, descriptive `alt` text, a short factual description and a live or repository URL. The BikeTrain screenshot was captured from the locally running repository app. Do not replace these assets with CSS-built fake screenshots or remote placeholder photography.
+
+The learning category contains `learn-react`, `learn-python` and `learn-csharp`. These are teaching materials created and delivered in Marius's courses, so keep them visually distinct from client-facing work and deployed portfolio sites.
 
 ### Contact
 

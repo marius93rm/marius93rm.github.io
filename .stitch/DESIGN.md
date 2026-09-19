@@ -7,9 +7,9 @@ This document is the visual source of truth for the static portfolio site. It is
 Light editorial tech for business owners and companies in Romania. The interface should feel credible, focused and premium without looking corporate-template or gaming-oriented. Use controlled asymmetry, generous whitespace and a clear reading path toward a phone conversation.
 
 - Page theme: light only.
-- Design variance: 6/10, offset asymmetric layouts with clear alignment.
+- Design variance: 7/10, editorial asymmetry with explicit alignment and a varied project rhythm.
 - Motion intensity: 4/10, restrained transitions and user-controlled interactions.
-- Visual density: 3/10, spacious portfolio presentation.
+- Visual density: 4/10, spacious page with a more information-rich project gallery.
 - Content register: concise, direct and factual.
 - Primary conversion: call Marius.
 - Secondary conversion: review real work and submit the contact form.
@@ -53,12 +53,15 @@ Do not introduce additional accent hues, social-network blue, neon orange, purpl
 ## 5. Layout principles
 
 - Use a centered container with a maximum width of 1180px.
-- Use CSS Grid for asymmetric splits and galleries.
+- Use stable CSS Grid Level 1/2 primitives for asymmetric splits and galleries: explicit tracks, spans, gaps and media-query fallbacks. This gallery is not a masonry or grid-lanes layout.
 - Collapse all multi-column sections to one column below 768px.
+- Use a 12-column desktop project gallery: one full-width featured split, alternating 5/7-column supporting rows and one full-width repository close. Do not use three equal project cards.
+- At widths below 1100px, reduce the project gallery to two columns. At widths below 768px, stack every project card into one column with its image before its copy.
 - Keep the hero split on desktop: copy left, portrait right.
 - Keep technology logos or verified background signals in a separate band below the hero, not as a cluttered trust strip inside the hero. Use a restrained list of signals such as Apple Developer Academy, Swift/iOS/macOS, UX/UI and credentials; do not turn it into an exhaustive CV.
 - Make websites the visually dominant service, with supporting services arranged as a vertical group.
-- Use a featured portfolio item plus smaller supporting items. Do not use an empty bento cell.
+- Use a full-width featured project, alternating 5/7-column supporting rows and a full-width repository close. Do not use an empty bento cell.
+- Do not introduce CSS Grid Level 3 grid-lanes/masonry syntax such as `display: grid-lanes`, `grid-template-rows: masonry` or `masonry-auto-flow` until the specification and browser support are stable enough for this production page.
 - Use `min-height: 100dvh` for the desktop hero, never `100vh` as the only height rule.
 - Preserve stable anchor IDs: `services`, `teaching`, `work`, `contact`.
 
