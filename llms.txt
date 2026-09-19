@@ -15,7 +15,6 @@
 ## Project fit
 
 - [Ways to work together](https://marius93rm.github.io/#work): Launch a new business website, fix or extend an existing project, or make a technical decision with clearer context.
-- [Frequently asked questions](https://marius93rm.github.io/#faq): Answers about websites, existing stacks, supported technologies and how to start.
 
 ## Background
 

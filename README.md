@@ -148,7 +148,7 @@ Technical SEO cannot replace useful final copy. The next content pass should add
 
 ## AI search visibility
 
-The homepage keeps its important answers in crawlable, visible HTML and includes matching JSON-LD for the website, person, professional service and FAQ content. `robots.txt` explicitly allows `OAI-SearchBot`, following [OpenAI's crawler guidance](https://help.openai.com/en/articles/9237897-chatgpt-search), while the canonical URL and sitemap keep the public page easy to discover.
+The homepage keeps its important answers in crawlable, visible HTML and includes matching JSON-LD for the website, person and professional service. `robots.txt` explicitly allows `OAI-SearchBot`, following [OpenAI's crawler guidance](https://help.openai.com/en/articles/9237897-chatgpt-search), while the canonical URL and sitemap keep the public page easy to discover.
 
 [`llms.txt`](llms.txt) is included as a small, experimental index of the site. It is not a ranking control: [Google's generative AI guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) says Search does not require or use special AI-readable files. Keep it concise and update it when the public offer changes.
 

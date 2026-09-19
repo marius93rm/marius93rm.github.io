@@ -564,8 +564,7 @@ h1 {
 }
 
 .section--teaching,
-.section--contact,
-.section--faq {
+.section--contact {
   background: var(--surface);
 }
 
@@ -1682,58 +1681,6 @@ h1 {
 .learning-card .text-link:hover {
   color: #8fc5ed;
   text-decoration-color: #8fc5ed;
-}
-
-/* FAQ */
-
-.faq-list {
-  max-width: 860px;
-  border-top: 1px solid var(--border);
-}
-
-.faq-item {
-  border-bottom: 1px solid var(--border);
-}
-
-.faq-item summary {
-  display: flex;
-  min-height: 72px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.1rem 0;
-  color: var(--ink);
-  font-size: clamp(1rem, 1.8vw, 1.25rem);
-  font-weight: 800;
-  line-height: 1.25;
-  cursor: pointer;
-  list-style: none;
-}
-
-.faq-item summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq-item summary::after {
-  flex: 0 0 auto;
-  color: var(--accent);
-  content: "+";
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.faq-item[open] summary::after {
-  content: "−";
-}
-
-.faq-answer {
-  padding: 0 3rem 1.5rem 0;
-}
-
-.faq-answer p {
-  max-width: 70ch;
-  margin: 0;
-  color: var(--ink-soft);
 }
 
 /* Contact form */
