@@ -10,10 +10,11 @@ The first version is intentionally a visual and technical foundation. It does no
 - No framework, build step or runtime dependency.
 - English is the first language.
 - Light editorial tech visual system.
-- Homepage routes are stable through `#services`, `#teaching`, `#work` and `#contact`.
+- Homepage routes are stable through `#services`, `#teaching`, `#work`, `#background` and `#contact`.
 - Formspree is structurally ready, but the real form endpoint still needs to be inserted.
-- The portrait, additional technology logos, course cards and project previews are explicit content slots; the current background strip contains only verified LinkedIn signals.
-- The selected background strip and LinkedIn links use information verified from the public LinkedIn profile.
+- The portrait, additional technology logos, course cards and project previews are explicit content slots.
+- The education and certification strip uses verified CV data and appears before the contact section. The extracted public CV content is stored in [`data/cv.json`](data/cv.json).
+- The selected professional background and LinkedIn links use information verified from the supplied CV and public LinkedIn profile.
 
 ## Design direction
 
@@ -47,7 +48,7 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 
 1. Header and primary navigation.
 2. Hero with personal portrait slot and primary contact action.
-3. Selected professional background directly below the hero, with room for confirmed technology logos later.
+3. Education and certifications strip before contact, with the verified highlights ordered as Sapienza, Apple Developer Academy, Apple Teacher and Entrepreneurship Course.
 4. Services with websites as the featured service.
 5. Courses and teaching carousel.
 6. Selected work gallery for real websites and apps.
@@ -57,6 +58,12 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 The source template supplied by TemplatesJungle was used as a structural reference for the hero, fixed navigation and asymmetric grid. The gaming copy, orange neon palette, remote demo images, Material Symbols and CDN dependencies were removed.
 
 ## Content contracts for future agents
+
+### CV-derived education and experience
+
+The supplied `Marius-Minia-CV2026ENG.pdf` is the source for the public education, certification and professional-training data in [`data/cv.json`](data/cv.json). The JSON keeps the original date text, institutions, locations, focus keywords and descriptive copy for later content passes. The homepage highlights the following in the requested order: Computer Engineering studies at Sapienza University of Rome (2014), Apple Developer Academy Programme (2019), Apple Teacher certification (2020), and Entrepreneurship Course at SC SIAB Development Srl (2018).
+
+The public JSON and footer publish the confirmed phone number and email address as clickable `tel:` and `mailto:` links. Date of birth, gender and driving-licence information remain excluded from the public site.
 
 ### LinkedIn-derived background
 

@@ -1,0 +1,420 @@
+{
+  "source": {
+    "document": "Marius-Minia-CV2026ENG.pdf",
+    "language": "en",
+    "reviewedOn": "2026-09-19",
+    "scope": "Public professional information extracted from the supplied CV"
+  },
+  "profile": {
+    "name": "Marius Minia",
+    "headline": "IT instructor and software development trainer",
+    "summary": "Experienced in corporate academies, vocational courses and technical training programmes for junior developers, students and professionals. Teaching combines hands-on exercises, project work, code reviews, guided debugging and progressive skill-building.",
+    "description": "I teach Full-Stack programming, web development, databases, software quality, Agile methodologies, UX/UI design and digital tools. My practical approach combines hands-on exercises, project work, code reviews, guided debugging and progressive skill-building. My strength lies in combining technical expertise, clear instruction and a strong design sensibility. I go beyond syntax and frameworks, helping learners think like developers: analyse problems, structure solutions, write maintainable code and present projects professionally.",
+    "languages": [
+      "Italian",
+      "English (B2)",
+      "Romanian"
+    ],
+    "contact": {
+      "phone": {
+        "display": "+39 393 060 7643",
+        "href": "tel:+393930607643"
+      },
+      "email": {
+        "display": "marius93rm@gmail.com",
+        "href": "mailto:marius93rm@gmail.com"
+      }
+    },
+    "publicLinks": {
+      "linkedin": "https://www.linkedin.com/in/mariusminia"
+    }
+  },
+  "educationAndCertifications": [
+    {
+      "id": "sapienza-computer-engineering",
+      "type": "education",
+      "year": 2014,
+      "dateText": "2014",
+      "title": "Computer Engineering studies",
+      "institution": "Sapienza University of Rome",
+      "location": "Rome, Italy",
+      "subjects": [
+        "Python",
+        "Java",
+        "SQL",
+        "Front-end development",
+        "Back-end development",
+        "HTML",
+        "WordPress",
+        "Joomla",
+        "JavaScript",
+        "HTML5",
+        "Bootstrap",
+        "C",
+        "jQuery",
+        "XML",
+        "Scala",
+        "Ruby",
+        "RESTful services",
+        "Node.js"
+      ],
+      "description": "My Computer Engineering studies covered topics including Python, Java, SQL, front-end and back-end development, HTML, WordPress and Joomla CMSs, JavaScript, HTML5, Bootstrap, C, jQuery, XML, Scala, Ruby, RESTful services and Node.js.",
+      "websiteLabel": "Computer Engineering studies · Rome"
+    },
+    {
+      "id": "apple-developer-academy",
+      "type": "programme",
+      "year": 2019,
+      "dateText": "2019",
+      "title": "Apple Developer Academy Programme",
+      "institution": "University of Naples Federico II and Apple",
+      "location": "Naples, Italy",
+      "focus": [
+        "Swift",
+        "iOS development",
+        "macOS development",
+        "Product design",
+        "UX/UI",
+        "Presentation",
+        "Communication",
+        "Teamwork"
+      ],
+      "description": "At the Apple Developer Academy, I strengthened my software development skills for iOS and macOS using Swift. I also gained an introduction to the broad field of Product Design, with a particular focus on UX/UI. Equally importantly, I significantly strengthened my already solid soft skills—including presentation, communication and teamwork—entirely in English. I cannot disclose further information as I am bound by a confidentiality agreement.",
+      "websiteLabel": "University of Naples Federico II & Apple · Swift, iOS/macOS, UX/UI"
+    },
+    {
+      "id": "apple-teacher",
+      "type": "certification",
+      "year": 2020,
+      "dateText": "2020",
+      "title": "Apple Teacher",
+      "issuer": "Apple",
+      "description": "Apple Teacher certification.",
+      "websiteLabel": "Certification · Apple"
+    },
+    {
+      "id": "entrepreneurship-course",
+      "type": "course",
+      "year": 2018,
+      "dateText": "2018",
+      "title": "Entrepreneurship Course",
+      "institution": "SC SIAB Development Srl",
+      "location": "Cluj, Romania",
+      "description": "Entrepreneurship course completed at SC SIAB Development Srl in Cluj, Romania.",
+      "websiteLabel": "SC SIAB Development Srl · Cluj, Romania"
+    },
+    {
+      "id": "google-digital-training",
+      "type": "certification",
+      "year": 2019,
+      "dateText": "2019",
+      "title": "Google Digital Training",
+      "issuer": "Google",
+      "focus": [
+        "Fundamentals of online marketing"
+      ],
+      "description": "Certification in the fundamentals of online marketing."
+    },
+    {
+      "id": "itc-matteucci-diploma",
+      "type": "diploma",
+      "year": 2013,
+      "dateText": "2013",
+      "title": "Diploma in Accounting and Programming",
+      "institution": "I.T.C. Matteucci",
+      "location": "Rome, Italy",
+      "result": "95/100",
+      "focus": [
+        "Java",
+        "Visual Basic",
+        "Microsoft Office",
+        "Excel",
+        "Accounting"
+      ],
+      "description": "In addition to the standard curriculum of a Technical Commercial Institute, I was introduced to Java and Visual Basic. The accounting programme also incorporated modern tools such as the Microsoft Office suite, particularly Excel, alongside traditional double-entry bookkeeping. I graduated with a score of 95/100."
+    }
+  ],
+  "experience": [
+    {
+      "period": "2025/26",
+      "dateText": "2025/26",
+      "role": "UX/UI Specialisation Instructor",
+      "organisation": "Boolean",
+      "focus": [
+        "Design systems",
+        "Atomic Design",
+        "Material Design",
+        "React",
+        "Storybook",
+        "TypeScript",
+        "Figma prototyping",
+        "Developer handoff"
+      ],
+      "description": "Advanced module on UX and UI design: design systems, Atomic Design, Material Design, React & Storybook, TypeScript, Figma prototyping and developer handoff."
+    },
+    {
+      "period": "2025",
+      "dateText": "2025",
+      "role": "C# and .NET Instructor",
+      "organisation": "ADECCO Formazione SRL",
+      "focus": [
+        "SOLID principles",
+        "Design patterns",
+        "TDD",
+        "Software architecture",
+        "Asynchronous programming",
+        "Object-oriented programming"
+      ],
+      "description": "Advanced Forma.Temp course in C# and .NET, focusing on SOLID principles and design patterns, TDD and software architecture, asynchronous programming and OOP."
+    },
+    {
+      "period": "2025",
+      "dateText": "2025",
+      "role": "Unit Testing and TDD Instructor",
+      "organisation": "Laser Romae",
+      "focus": [
+        "Unit testing",
+        "TDD",
+        "Mocking",
+        "Static code analysis",
+        "Refactoring",
+        "Code coverage"
+      ],
+      "description": "Course on software quality: unit testing, TDD, mocking, static code analysis, refactoring and code coverage, with hands-on exercises in multiple languages."
+    },
+    {
+      "period": "2024",
+      "dateText": "2024",
+      "role": "React Instructor",
+      "organisation": "Boolean",
+      "focus": [
+        "React components",
+        "Hooks",
+        "State management",
+        "APIs",
+        "React Router",
+        "JavaScript",
+        "Node.js"
+      ],
+      "description": "Course on React components, hooks, state management, APIs, React Router, dynamic interfaces and hands-on projects, JavaScript and Node.js."
+    },
+    {
+      "period": "2023",
+      "dateText": "2023",
+      "role": "Laravel Instructor",
+      "organisation": "Boolean",
+      "focus": [
+        "PHP",
+        "Laravel",
+        "MVC architecture",
+        "Authentication",
+        "APIs",
+        "HTML5",
+        "CSS3",
+        "Vue.js"
+      ],
+      "description": "Laravel module covering PHP, routing, controllers, ORM, authentication, APIs and MVC architecture, including complete application development. Also covered HTML5, CSS3 and Vue.js."
+    },
+    {
+      "period": "2023",
+      "dateText": "2023",
+      "role": "C++ Instructor",
+      "organisation": "Umanaforma",
+      "focus": [
+        "C++",
+        "Object-oriented programming",
+        "Functional programming",
+        "Git",
+        "Scrum",
+        "Teamwork"
+      ],
+      "description": "Developer academy covering C++, OOP, functional programming, Git, Scrum and teamwork."
+    },
+    {
+      "period": "2023",
+      "dateText": "2023",
+      "role": "Microsoft 365 Instructor",
+      "organisation": "Italian Motorcycling Federation",
+      "focus": [
+        "Word",
+        "PowerPoint",
+        "Excel",
+        "Productivity tools",
+        "Collaboration"
+      ],
+      "description": "Course on Microsoft 365, focusing on advanced Word, PowerPoint and Excel, the latest productivity features and collaboration tools."
+    },
+    {
+      "period": "2022",
+      "dateText": "2022",
+      "role": "JavaScript and Relational Database Instructor",
+      "organisation": "Almaviva",
+      "focus": [
+        "JavaScript",
+        "Front-end integration",
+        "jQuery",
+        "Bootstrap",
+        "MySQL",
+        "PostgreSQL"
+      ],
+      "description": "Modules on JavaScript (syntax, front-end integration, jQuery, Bootstrap) and MySQL (database creation and querying, PostgreSQL)."
+    },
+    {
+      "period": "2022",
+      "dateText": "2022",
+      "role": "MySQL Database Instructor",
+      "organisation": "ELIS",
+      "focus": [
+        "SQL",
+        "Database design",
+        "Entity-relationship modelling",
+        "MongoDB",
+        "NoSQL",
+        "PostgreSQL"
+      ],
+      "description": "Course on SQL and database design: conceptual and ER modelling, queries and performance, relational and non-relational databases, MongoDB NoSQL and PostgreSQL."
+    },
+    {
+      "period": "2022",
+      "dateText": "2022",
+      "role": "Instructor",
+      "organisation": "Capoweb.it sas",
+      "focus": [
+        "MySQL",
+        "MariaDB",
+        "CassandraDB",
+        "Software design",
+        "Apache Kafka",
+        "Scrum",
+        "Docker"
+      ],
+      "description": "Various Forma.Temp vocational courses for corporate clients on relational and non-relational databases (MySQL, MariaDB, CassandraDB), software design, Apache Kafka, Scrum and Docker."
+    },
+    {
+      "period": "2021",
+      "dateText": "2021",
+      "role": "Artificial Intelligence Instructor",
+      "organisation": "SOSE",
+      "focus": [
+        "Python",
+        "Machine learning",
+        "Deep learning",
+        "Data science",
+        "pandas",
+        "NumPy"
+      ],
+      "description": "Advanced employee training course on Python, machine learning, deep learning and data science, pandas and NumPy."
+    },
+    {
+      "period": "2021",
+      "dateText": "2021",
+      "role": "Instructor",
+      "organisation": "Istituto Europeo Terzo Millennio",
+      "focus": [
+        "Python",
+        "Selenium",
+        "Object-oriented programming",
+        "CMS",
+        "Databases",
+        "Teradata",
+        "Angular",
+        "Git",
+        "Front-end development",
+        "Consul",
+        "Kafka",
+        "React Native"
+      ],
+      "description": "Remote teaching for several academies covering Python, Selenium, OOP, CMS, databases, Teradata, Angular, Git, front-end development, Consul, Kafka and React Native."
+    },
+    {
+      "period": "2020",
+      "dateText": "2020",
+      "role": "IT Instructor",
+      "organisation": "Begear for ATOS",
+      "location": "Rome, Italy",
+      "focus": [
+        "Object-oriented programming",
+        "Java",
+        "Spring Framework",
+        "UML",
+        "Agile",
+        "Design Thinking",
+        "SQL",
+        "REST"
+      ],
+      "description": "Delivered courses on OOP, Java, Spring Framework, UML, Agile, Design Thinking, SQL and REST."
+    },
+    {
+      "period": "2019",
+      "dateText": "2019",
+      "role": "Co-founder and Treasurer",
+      "organisation": "Il Salotto ONLUS",
+      "location": "Rome, Italy",
+      "focus": [
+        "Cultural association"
+      ],
+      "description": "Co-founder and treasurer of a cultural association."
+    },
+    {
+      "period": "2017",
+      "dateText": "2017",
+      "role": "Web Designer",
+      "organisation": "Depurazioneacqua.eu",
+      "focus": [
+        "Website management",
+        "Email marketing",
+        "SEO"
+      ],
+      "description": "Website management, email marketing and SEO."
+    },
+    {
+      "period": "2016",
+      "dateText": "2016",
+      "role": "Smartphone App Development",
+      "organisation": "Collaborative full-stack platform project",
+      "focus": [
+        "iOS apps",
+        "Android apps",
+        "Full-stack development"
+      ],
+      "description": "Collaborative development of a full-stack platform with iOS and Android apps."
+    },
+    {
+      "period": "2015",
+      "dateText": "2015",
+      "role": "Web Designer",
+      "organisation": "A-Sapiens Training Centre",
+      "focus": [
+        "WordPress",
+        "Joomla",
+        "Drupal",
+        "Marketing websites",
+        "Registration platforms",
+        "Payment platforms"
+      ],
+      "description": "Built marketing sites with WordPress, Joomla and Drupal; managed registration and payment platforms."
+    }
+  ],
+  "expertise": [
+    "Full-stack development",
+    "Web development",
+    "Software quality",
+    "Unit testing and TDD",
+    "Databases",
+    "Agile methodologies",
+    "UX/UI design",
+    "Product design",
+    "Design systems",
+    "Digital tools",
+    "SEO",
+    "Digital marketing"
+  ],
+  "privacy": {
+    "excludedFromPublicJson": [
+      "Date of birth",
+      "Gender",
+      "Driving licence details"
+    ],
+    "reason": "Direct contact details are intentionally published because they are part of the website contact surface."
+  }
+}
