@@ -1,27 +1,27 @@
-# Marius Minia Developer
+# Marius Minia | Developer, Designer & Senior IT Trainer
 
-> Marius Minia is a web developer in Romania who builds business websites and helps teams solve problems in existing web projects.
+> Marius Minia is a developer, designer, senior IT trainer and coach in Romania. He helps developers grow technically and design software with greater structure, clarity and confidence.
 
-## Services
+## How Marius helps
 
-- [Website development](https://marius93rm.github.io/#services): Responsive business websites with clear navigation, useful content, UX/UI and SEO foundations.
-- [Development help](https://marius93rm.github.io/#services): Support for bugs, features and technical decisions in existing web projects.
-- [UX/UI and software quality](https://marius93rm.github.io/#services): Figma, design systems, testing, TDD, refactoring and code review.
+- [Developer coaching](https://marius93rm.github.io/#services): Practical support for technical growth, code review, software architecture, testing and engineering decisions.
+- [Software design and UX/UI](https://marius93rm.github.io/#services): Clearer interfaces, design systems and software that is easier to understand, use and maintain.
+- [Web development and technical support](https://marius93rm.github.io/#services): Help building or improving projects with React, JavaScript, Node.js, Laravel, PHP, C#/.NET, Python and SQL.
 
-## Technology expertise
+## Senior IT training
 
-- [Technology experience](https://marius93rm.github.io/#teaching): React, JavaScript, Node.js, Laravel, PHP, C#, .NET, Java, Spring, Python, SQL, MySQL, PostgreSQL, MongoDB, Docker, Angular, Vue.js, TypeScript, Storybook and Figma.
+- [Training experience](https://marius93rm.github.io/#teaching): React, JavaScript, Node.js, Laravel, PHP, C#, .NET, Java, Spring, Python, SQL, MySQL, PostgreSQL, MongoDB, Docker, Angular, Vue.js, TypeScript, Storybook and Figma, with a focus on software quality and practical application.
 
-## Project fit
+## Selected work
 
-- [Ways to work together](https://marius93rm.github.io/#work): Launch a new business website, fix or extend an existing project, or make a technical decision with clearer context.
+- [Software and web projects](https://marius93rm.github.io/#work): Websites, developer tools and product experiments shaped around clear interfaces, accessibility, performance and maintainable code.
 
 ## Background
 
-- [Technical background](https://marius93rm.github.io/#background): Computer Engineering studies at Sapienza University of Rome, the Apple Developer Academy and professional certifications.
+- [Engineering, product design and teaching](https://marius93rm.github.io/#background): Computer Engineering studies at Sapienza University of Rome, the Apple Developer Academy and professional certifications.
 
 ## Contact
 
-- [Contact Marius](https://marius93rm.github.io/#contact): Discuss a website, web application or technical problem.
+- [Contact Marius](https://marius93rm.github.io/#contact): Discuss a learning goal, codebase, product idea, web project or technical problem.
 - Phone: [+39 393 060 7643](tel:+393930607643)
 - Email: [marius93rm@gmail.com](mailto:marius93rm@gmail.com)

@@ -328,14 +328,14 @@ button:disabled {
   z-index: 1;
   display: grid;
   min-height: 100dvh;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.78fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.72fr);
   align-items: center;
   gap: clamp(3rem, 8vw, 8rem);
   padding-block: clamp(5.5rem, 10vw, 7rem);
 }
 
 .hero-copy {
-  max-width: 620px;
+  max-width: 760px;
 }
 
 .eyebrow {
@@ -362,11 +362,15 @@ h3 {
 }
 
 h1 {
-  max-width: 18ch;
+  max-width: none;
   margin-bottom: 1.5rem;
-  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-size: clamp(2.75rem, 4.1vw, 3.5rem);
   font-weight: 800;
-  line-height: 0.94;
+  line-height: 1;
+}
+
+.hero-title-line {
+  display: block;
 }
 
 .hero-summary {
@@ -2141,8 +2145,8 @@ h1 {
   }
 
   h1 {
-    max-width: 13ch;
-    font-size: clamp(3rem, 16vw, 4.8rem);
+    max-width: none;
+    font-size: clamp(2.6rem, 12vw, 3.5rem);
   }
 
   .portrait-frame {

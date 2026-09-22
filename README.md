@@ -1,6 +1,6 @@
-# Marius Minia Developer
+# Marius Minia | Developer, Designer & Senior IT Trainer
 
-Static portfolio and contact site for Marius Minia, a web developer and informatics professor serving businesses in Romania.
+Static portfolio and contact site for Marius Minia, a developer, designer, senior IT trainer and coach helping developers grow technically and design software with more structure and clarity.
 
 The first version is intentionally a visual and technical foundation. It does not invent portfolio entries, courses, technology logos, testimonials, prices, metrics, client names or personal contact details. Those will be added in later content passes.
 
@@ -19,7 +19,7 @@ The first version is intentionally a visual and technical foundation. It does no
 
 ## Design direction
 
-The page is read as a professional developer portfolio for business owners and companies. The intended impression is premium tech, calm, precise and credible rather than gaming, neon or startup-generic.
+The page is read as a professional developer portfolio for developers, technical teams and people looking for practical software guidance. The intended impression is premium tech, calm, precise and credible rather than gaming, neon or startup-generic.
 
 The design system is documented in [`.stitch/DESIGN.md`](.stitch/DESIGN.md). The file is a manual source of truth inspired by the Google Stitch skills workflow. Stitch MCP is not installed in this repository, so it is documentation only and does not run the site.
 
@@ -72,7 +72,7 @@ The public JSON and footer publish the confirmed phone number and email address 
 
 The public profile at <https://www.linkedin.com/in/mariusminia> identifies Marius as working freelance / across multiple institutions and lists the Apple Developer Academy @Unina Federico II (2019-2020), with a focus on Swift, iOS/macOS development and UX/UI/product design. It also lists Apple Teacher and Google's fundamentals of digital marketing training.
 
-These facts are used as concise credibility signals, not as a replacement for a complete CV. Do not infer current employers, client names, dates or project outcomes beyond the profile and the user's confirmed brief. The business positioning remains Romania-focused because that is the current project brief.
+These facts are used as concise credibility signals, not as a replacement for a complete CV. Do not infer current employers, client names, dates or project outcomes beyond the profile and the user's confirmed brief. The positioning is Romania-focused and centres on developer coaching, software design, senior IT training and practical web development.
 
 ### Portrait
 
