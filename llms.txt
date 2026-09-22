@@ -8,9 +8,9 @@
 - [Software design and UX/UI](https://marius93rm.github.io/#services): Clearer interfaces, design systems and software that is easier to understand, use and maintain.
 - [Web development and technical support](https://marius93rm.github.io/#services): Help building or improving projects with React, JavaScript, Node.js, Laravel, PHP, C#/.NET, Python and SQL.
 
-## Senior IT training
+## Courses taught by Marius Minia
 
-- [Training experience](https://marius93rm.github.io/#teaching): React, JavaScript, Node.js, Laravel, PHP, C#, .NET, Java, Spring, Python, SQL, MySQL, PostgreSQL, MongoDB, Docker, Angular, Vue.js, TypeScript, Storybook and Figma, with a focus on software quality and practical application.
+- [Courses and training experience](https://marius93rm.github.io/#teaching): Marius has personally taught professional courses and developer academies covering React, JavaScript, Node.js, Laravel, PHP, C#, .NET, Java, Spring, Python, SQL, MySQL, PostgreSQL, MongoDB, Docker, Angular, Vue.js, TypeScript, Storybook and Figma, with a focus on software quality and practical application.
 
 ## Selected work
 

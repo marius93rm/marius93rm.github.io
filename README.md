@@ -53,7 +53,7 @@ Manrope is self-hosted in `assets/fonts/Manrope-Variable.ttf`. Do not add Google
 2. Hero with personal portrait slot and primary contact action.
 3. Education and certifications strip before contact, with the verified highlights ordered chronologically as Sapienza (2014), Entrepreneurship Course (2018), Apple Developer Academy (2019) and Apple Teacher (2020).
 4. Services with websites as the featured service.
-5. Teaching experience slider with real course details and technology tags.
+5. Teaching experience slider with courses Marius personally taught, plus real course details and technology tags.
 6. Selected projects, followed by a separate group for teaching repositories.
 7. Simple Formspree contact form.
 8. Footer with four icon-only actions for LinkedIn, email, telephone and the contact form.
