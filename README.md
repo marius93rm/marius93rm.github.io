@@ -7,8 +7,9 @@ The first version is intentionally a visual and technical foundation. It does no
 ## Current status
 
 - Static HTML, CSS and vanilla JavaScript.
-- No framework, build step or runtime dependency.
-- English is the first language.
+- No framework or runtime dependency. Serving the site needs no build step; `scripts/build-locales.mjs` regenerates the localized HTML when source copy changes.
+- English is the default language, with Italian and Romanian localized pages.
+- The root page stays in English. When Italian or Romanian is the first supported browser language, it shows a non-blocking link to that translation; the language switcher stores an explicit choice locally.
 - Light editorial tech visual system.
 - Homepage routes are stable through `#services`, `#teaching`, `#work`, `#background` and `#contact`.
 - Formspree is structurally ready, but the real form endpoint still needs to be inserted.
@@ -142,7 +143,13 @@ The current canonical URL is `https://marius93rm.github.io/`. If a custom domain
 rg -n "marius93rm\.github\.io" .
 ```
 
-When Romanian or Italian translations are ready, add real localized pages first, then add `hreflang` links and their URLs to the sitemap. Do not add alternate-language tags for pages that do not exist.
+The homepage has real localized pages at [`/it/`](it/index.html) and [`/ro/`](ro/index.html). Every locale page has a self-referencing canonical, reciprocal `hreflang` links, localized title/description/Open Graph metadata, localized visible HTML and matching JSON-LD. The static variants are generated from the English source with:
+
+```bash
+node scripts/build-locales.mjs
+```
+
+Do not add alternate-language tags for pages that do not exist. If the public domain changes, update all canonical, `hreflang`, JSON-LD, `robots.txt` and sitemap URLs together.
 
 Technical SEO cannot replace useful final copy. The next content pass should add a clear value proposition, service detail, real proof and location context without keyword stuffing.
 

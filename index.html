@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-locale="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,9 +7,14 @@
       name="description"
       content="Developer, designer, senior IT trainer and coach in Romania. I help developers grow technically through software design, coaching and practical training."
     >
+    <meta name="author" content="Marius Minia">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="theme-color" content="#f5f8fc">
     <link rel="canonical" href="https://marius93rm.github.io/">
+    <link rel="alternate" hreflang="en" href="https://marius93rm.github.io/">
+    <link rel="alternate" hreflang="it" href="https://marius93rm.github.io/it/">
+    <link rel="alternate" hreflang="ro" href="https://marius93rm.github.io/ro/">
+    <link rel="alternate" hreflang="x-default" href="https://marius93rm.github.io/">
     <link rel="icon" href="assets/images/brand/favicon.svg" type="image/svg+xml">
     <script>document.documentElement.classList.add("js");</script>
     <link rel="preload" href="assets/fonts/Manrope-Variable.ttf" as="font" type="font/ttf" crossorigin>
@@ -22,6 +27,9 @@
       content="Developer, designer, senior IT trainer and coach in Romania helping developers grow technically through software design, coaching and practical training."
     >
     <meta property="og:url" content="https://marius93rm.github.io/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="ro_RO">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Developer, Designer &amp; Senior IT Trainer | Marius Minia">
     <meta
@@ -61,7 +69,7 @@
               "@id": "https://marius93rm.github.io/#service"
             },
             "inLanguage": "en",
-            "dateModified": "2026-09-22"
+            "dateModified": "2026-09-25"
           },
           {
             "@type": "Person",
@@ -203,6 +211,14 @@
             <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons/tabler-icons.svg#icon-phone"></use></svg>
             Call Marius
           </a>
+          <!-- locale-switcher:start -->
+          <div class="language-switcher" aria-label="Language selection">
+            <span class="language-switcher-label">Language:</span>
+            <a class="language-link is-active" href="./" lang="en" aria-current="page" title="English">EN</a>
+            <a class="language-link" href="./it/" lang="it" title="Italian">IT</a>
+            <a class="language-link" href="./ro/" lang="ro" title="Romanian">RO</a>
+          </div>
+          <!-- locale-switcher:end -->
         </nav>
 
         <button
@@ -543,20 +559,14 @@
             <p>Websites, developer tools and product experiments that show how I approach UX/UI, accessibility, performance and maintainable code.</p>
           </div>
 
-          <aside class="lighthouse-proof" aria-labelledby="lighthouse-proof-title">
-            <div class="lighthouse-proof-score">
-              <p class="lighthouse-proof-kicker">Lighthouse score</p>
-              <p class="lighthouse-proof-number">100<span>%</span></p>
+          <aside class="project-rating" aria-labelledby="project-rating-title">
+            <div class="project-rating-score">
+              <p class="project-rating-kicker">Overall rating</p>
+              <p class="project-rating-number">10<span>/10</span></p>
             </div>
-            <div class="lighthouse-proof-copy">
-              <h3 id="lighthouse-proof-title">Built for performance, clarity and accessibility.</h3>
+            <div class="project-rating-copy">
+              <h3 id="project-rating-title">Built for performance, clarity and accessibility.</h3>
               <p>Performance, SEO, accessibility and engineering best practices are part of the build from the start.</p>
-              <ul class="lighthouse-proof-metrics" aria-label="Lighthouse categories">
-                <li>Performance</li>
-                <li>Accessibility</li>
-                <li>Best practices</li>
-                <li>SEO</li>
-              </ul>
             </div>
           </aside>
 

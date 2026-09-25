@@ -2,6 +2,12 @@
 
 > Marius Minia is a developer, designer, senior IT trainer and coach in Romania. He helps developers grow technically and design software with greater structure, clarity and confidence.
 
+## Language versions
+
+- [English homepage](https://marius93rm.github.io/): Default homepage. Visitors with Italian or Romanian as their first supported browser language see a link to the matching translation.
+- [Italian homepage](https://marius93rm.github.io/it/): Localized page for Italian-speaking visitors.
+- [Romanian homepage](https://marius93rm.github.io/ro/): Localized page for Romanian-speaking visitors.
+
 ## How Marius helps
 
 - [Developer coaching](https://marius93rm.github.io/#services): Practical support for technical growth, code review, software architecture, testing and engineering decisions.
