@@ -782,39 +782,46 @@
           </div>
 
           <form
+            id="contact-form"
             class="contact-form"
-            action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+            action="https://formspree.io/f/mbglkbyr"
             method="post"
             target="_top"
             data-contact-form
           >
+            <div class="form-status form-status--success" data-fs-success role="status" aria-live="polite">
+              Grazie per avermi scritto. Ti risponderò il prima possibile.
+            </div>
+            <div class="form-status form-status--error" data-fs-error role="alert" aria-live="assertive">
+              Non è stato possibile inviare il messaggio. Riprova.
+            </div>
+
             <div class="form-field">
               <label for="name">Nome</label>
-              <input id="name" name="name" type="text" autocomplete="name" required>
+              <input id="name" name="name" type="text" autocomplete="name" required data-fs-field aria-describedby="name-error">
+              <span class="form-field-error" id="name-error" data-fs-error="name">Inserisci il tuo nome.</span>
             </div>
 
             <div class="form-field">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
-            </div>
-
-            <div class="form-field">
-              <label for="company">Azienda o progetto <span>(facoltativo)</span></label>
-              <input id="company" name="company" type="text" autocomplete="organization">
+              <input id="email" name="email" type="email" autocomplete="email" required data-fs-field aria-describedby="email-error">
+              <span class="form-field-error" id="email-error" data-fs-error="email">Inserisci un indirizzo email valido.</span>
             </div>
 
             <div class="form-field">
               <label for="phone">Telefono <span>(facoltativo)</span></label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel">
+              <input id="phone" name="phone" type="tel" autocomplete="tel" data-fs-field aria-describedby="phone-error">
+              <span class="form-field-error" id="phone-error" data-fs-error="phone">Controlla questo campo.</span>
             </div>
 
             <div class="form-field form-field--wide">
               <label for="message">Parlami del tuo progetto, codebase o obiettivo di apprendimento</label>
-              <textarea id="message" name="message" rows="5" placeholder="Descrivi cosa vuoi imparare, progettare, costruire o migliorare, indicando anche il tuo stack e le tempistiche." required></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="Descrivi cosa vuoi imparare, progettare, costruire o migliorare, indicando anche il tuo stack e le tempistiche." required data-fs-field aria-describedby="message-error"></textarea>
+              <span class="form-field-error" id="message-error" data-fs-error="message">Aggiungi un breve messaggio sul tuo obiettivo.</span>
             </div>
 
             <div class="form-actions">
-              <button class="button" type="submit">Invia i dettagli del progetto</button>
+              <button class="button" type="submit" data-fs-submit-btn>Invia i dettagli del progetto</button>
               <p class="form-help">Indica il tuo obiettivo, lo stack attuale e le tempistiche.</p>
             </div>
           </form>
@@ -864,6 +871,17 @@
       </div>
     </footer>
 
+    <script>
+      window.formspree = window.formspree || function () {
+        (window.formspree.q = window.formspree.q || []).push(arguments);
+      };
+      window.formspree("initForm", {
+        formElement: "#contact-form",
+        formId: "mbglkbyr",
+        useDefaultStyles: false
+      });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
     <script src="../assets/js/site.js" defer></script>
   </body>
 </html>

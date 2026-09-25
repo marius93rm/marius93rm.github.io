@@ -782,39 +782,46 @@
           </div>
 
           <form
+            id="contact-form"
             class="contact-form"
-            action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+            action="https://formspree.io/f/mbglkbyr"
             method="post"
             target="_top"
             data-contact-form
           >
+            <div class="form-status form-status--success" data-fs-success role="status" aria-live="polite">
+              Mulțumesc pentru mesaj. Îți voi răspunde cât de curând.
+            </div>
+            <div class="form-status form-status--error" data-fs-error role="alert" aria-live="assertive">
+              Mesajul nu a putut fi trimis. Încearcă din nou.
+            </div>
+
             <div class="form-field">
               <label for="name">Nume</label>
-              <input id="name" name="name" type="text" autocomplete="name" required>
+              <input id="name" name="name" type="text" autocomplete="name" required data-fs-field aria-describedby="name-error">
+              <span class="form-field-error" id="name-error" data-fs-error="name">Introdu numele tău.</span>
             </div>
 
             <div class="form-field">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
-            </div>
-
-            <div class="form-field">
-              <label for="company">Companie sau proiect <span>(opțional)</span></label>
-              <input id="company" name="company" type="text" autocomplete="organization">
+              <input id="email" name="email" type="email" autocomplete="email" required data-fs-field aria-describedby="email-error">
+              <span class="form-field-error" id="email-error" data-fs-error="email">Introdu o adresă de email validă.</span>
             </div>
 
             <div class="form-field">
               <label for="phone">Telefon <span>(opțional)</span></label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel">
+              <input id="phone" name="phone" type="tel" autocomplete="tel" data-fs-field aria-describedby="phone-error">
+              <span class="form-field-error" id="phone-error" data-fs-error="phone">Verifică acest câmp.</span>
             </div>
 
             <div class="form-field form-field--wide">
               <label for="message">Povestește-mi despre proiectul tău, baza de cod sau obiectivul de învățare</label>
-              <textarea id="message" name="message" rows="5" placeholder="Descrie ce vrei să înveți, să proiectezi, să construiești sau să îmbunătățești. Menționează tehnologiile folosite și calendarul dorit." required></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="Descrie ce vrei să înveți, să proiectezi, să construiești sau să îmbunătățești. Menționează tehnologiile folosite și calendarul dorit." required data-fs-field aria-describedby="message-error"></textarea>
+              <span class="form-field-error" id="message-error" data-fs-error="message">Scrie câteva rânduri despre obiectivul tău.</span>
             </div>
 
             <div class="form-actions">
-              <button class="button" type="submit">Trimite detaliile proiectului</button>
+              <button class="button" type="submit" data-fs-submit-btn>Trimite detaliile proiectului</button>
               <p class="form-help">Menționează obiectivul, tehnologiile folosite și calendarul dorit.</p>
             </div>
           </form>
@@ -864,6 +871,17 @@
       </div>
     </footer>
 
+    <script>
+      window.formspree = window.formspree || function () {
+        (window.formspree.q = window.formspree.q || []).push(arguments);
+      };
+      window.formspree("initForm", {
+        formElement: "#contact-form",
+        formId: "mbglkbyr",
+        useDefaultStyles: false
+      });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
     <script src="../assets/js/site.js" defer></script>
   </body>
 </html>

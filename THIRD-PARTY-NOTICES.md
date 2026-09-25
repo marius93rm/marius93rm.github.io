@@ -35,3 +35,9 @@ The local SVG sprite at `assets/icons/tabler-icons.svg` contains outline icons f
 Project source: <https://github.com/tabler/tabler-icons>
 
 License: <https://tabler.io/license>
+
+## Formspree AJAX
+
+The contact form's asynchronous enhancement loads `@formspree/ajax` from unpkg. The form also retains a standard HTML POST fallback to Formspree if the library is unavailable.
+
+Project source and license: <https://github.com/formspree/formspree-js/tree/main/packages/formspree-ajax>

@@ -7,12 +7,12 @@ The first version is intentionally a visual and technical foundation. It does no
 ## Current status
 
 - Static HTML, CSS and vanilla JavaScript.
-- No framework or runtime dependency. Serving the site needs no build step; `scripts/build-locales.mjs` regenerates the localized HTML when source copy changes.
+- No framework or build step. Serving the site needs no package installation; `scripts/build-locales.mjs` regenerates the localized HTML when source copy changes.
 - English is the default language, with Italian and Romanian localized pages.
 - The root page stays in English. When Italian or Romanian is the first supported browser language, it shows a non-blocking link to that translation; the language switcher stores an explicit choice locally.
 - Light editorial tech visual system.
 - Homepage routes are stable through `#services`, `#teaching`, `#work`, `#background` and `#contact`.
-- Formspree is structurally ready, but the real form endpoint still needs to be inserted.
+- The contact form submits to Formspree and uses its vanilla JavaScript AJAX library for inline feedback, with a native HTML POST fallback.
 - The approved portrait and six selected desktop homepage screenshots are integrated in the homepage; the three teaching repositories have a separate highlighted card group with language logos.
 - Teaching technology tags use the compact Shields.io README visual language, with Simple Icons brand colors and icons loaded from the official Simple Icons CDN.
 - The education and certification strip uses verified CV data and appears before the contact section. The extracted public CV content is stored in [`data/cv.json`](data/cv.json).
@@ -112,13 +112,7 @@ The learning category contains `learn-react`, `learn-python` and `learn-csharp`.
 
 ### Contact
 
-Replace the placeholder action in the form:
-
-```html
-action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
-```
-
-with the verified Formspree endpoint. Keep named fields stable: `name`, `email`, `company`, `phone` and `message`. Test a real submission only after the endpoint is connected.
+The contact form uses Formspree form ID `mbglkbyr` and the endpoint `https://formspree.io/f/mbglkbyr`. It loads `@formspree/ajax` from unpkg for asynchronous submission and localized success/error messages; the `action` and `method` attributes preserve standard HTML submission if JavaScript or the CDN is unavailable. Keep named fields stable: `name`, `email`, `phone` and `message`. A real submission has not been sent as part of this code change.
 
 The phone number, email address, social URLs and any WhatsApp link must be supplied by Marius before adding them. Never commit guessed contact details.
 
