@@ -10,6 +10,7 @@ The first version is intentionally a visual and technical foundation. It does no
 - No framework or build step. Serving the site needs no package installation; `scripts/build-locales.mjs` regenerates the localized HTML when source copy changes.
 - English is the default language, with Italian and Romanian localized pages.
 - The root page stays in English. When Italian or Romanian is the first supported browser language, it shows a non-blocking link to that translation; the language switcher stores an explicit choice locally.
+- A standalone Romanian landing page for local entrepreneurs lives at [`/ro/alaturi-de-antreprenorii-locali/`](ro/alaturi-de-antreprenorii-locali/index.html). It is maintained separately from the generated locale homepages.
 - Light editorial tech visual system.
 - Homepage routes are stable through `#services`, `#teaching`, `#work`, `#background` and `#contact`.
 - The contact form submits to Formspree and uses its vanilla JavaScript AJAX library for inline feedback, with a native HTML POST fallback.
@@ -144,6 +145,8 @@ node scripts/build-locales.mjs
 ```
 
 Do not add alternate-language tags for pages that do not exist. If the public domain changes, update all canonical, `hreflang`, JSON-LD, `robots.txt` and sitemap URLs together.
+
+The Romanian local-business landing at [`/ro/alaturi-de-antreprenorii-locali/`](ro/alaturi-de-antreprenorii-locali/index.html) has its own canonical, Open Graph metadata, structured data and sitemap entry. Its contact form reuses the existing Formspree endpoint and field names.
 
 Technical SEO cannot replace useful final copy. The next content pass should add a clear value proposition, service detail, real proof and location context without keyword stuffing.
 
