@@ -13,6 +13,7 @@
 - [Developer coaching](https://marius93rm.github.io/#services): Practical support for technical growth, code review, software architecture, testing and engineering decisions.
 - [Software design and UX/UI](https://marius93rm.github.io/#services): Clearer interfaces, design systems and software that is easier to understand, use and maintain.
 - [Web development and technical support](https://marius93rm.github.io/#services): Help building or improving projects with React, JavaScript, Node.js, Laravel, PHP, C#/.NET, Python and SQL.
+- [Digital support for local entrepreneurs](https://marius93rm.github.io/ro/alaturi-de-antreprenorii-locali/): Dedicated Romanian page for small business owners around Brașov and Codlea, with practical help improving online information, organising customer enquiries and using everyday digital tools within an agreed scope and budget.
 
 ## Courses taught by Marius Minia
 

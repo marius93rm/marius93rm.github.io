@@ -2,8 +2,26 @@
   --lba-space: clamp(4.5rem, 8vw, 7.5rem);
 }
 
+.local-business-page main strong {
+  font-weight: 800;
+}
+
 .lba-nav-shell {
   position: relative;
+}
+
+.lba-nav-shell .brand {
+  min-width: 0;
+}
+
+.lba-nav-shell .brand-name span {
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.lba-nav-shell .menu-toggle {
+  flex-shrink: 0;
 }
 
 .lba-primary-nav {
@@ -56,6 +74,14 @@
 
 .lba-hero .button {
   max-width: 100%;
+}
+
+.lba-hero-note {
+  max-width: 48ch;
+  margin: 1rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .lba-portrait {
@@ -327,6 +353,41 @@
   border-left: 2px solid var(--accent);
   color: var(--ink-soft);
   font-size: 0.96rem;
+}
+
+.lba-about-copy p {
+  max-width: 60ch;
+  margin: 0 0 1.25rem;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.lba-faq-list {
+  max-width: 790px;
+}
+
+.lba-faq-list details {
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--border-strong);
+}
+
+.lba-faq-list details:last-child {
+  border-bottom: 1px solid var(--border-strong);
+}
+
+.lba-faq-list summary {
+  padding-block: 0.5rem;
+  color: var(--ink);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 800;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.lba-faq-list p {
+  max-width: 65ch;
+  margin: 0.75rem 0 0;
+  color: var(--ink-soft);
 }
 
 .lba-contact .contact-grid {

@@ -148,7 +148,7 @@ Do not add alternate-language tags for pages that do not exist. If the public do
 
 The Romanian local-business landing at [`/ro/alaturi-de-antreprenorii-locali/`](ro/alaturi-de-antreprenorii-locali/index.html) has its own canonical, Open Graph metadata, structured data and sitemap entry. Its contact form reuses the existing Formspree endpoint and field names.
 
-Technical SEO cannot replace useful final copy. The next content pass should add a clear value proposition, service detail, real proof and location context without keyword stuffing.
+The Romanian local-business landing has a separate positioning for owners of small businesses around Brașov and Codlea: practical help with online information, customer enquiries and everyday digital tools. It describes a direct collaboration with clear scope, costs and instructions, using local business situations rather than the homepage service catalogue and project gallery. Romanian market research, keyword priorities, search-intent analysis and the copy rationale are documented in [`docs/local-business-copy.md`](docs/local-business-copy.md).
 
 ## AI search visibility
 
