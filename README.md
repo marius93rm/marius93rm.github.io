@@ -14,7 +14,7 @@ The first version is intentionally a visual and technical foundation. It does no
 - Light editorial tech visual system.
 - Homepage routes are stable through `#services`, `#teaching`, `#work`, `#background` and `#contact`.
 - The contact form submits to Formspree and uses its vanilla JavaScript AJAX library for inline feedback, with a native HTML POST fallback.
-- The approved portrait and six selected desktop homepage screenshots are integrated in the homepage; the three teaching repositories have a separate highlighted card group with language logos.
+- The approved portrait and eight selected desktop homepage screenshots are integrated in the homepage; the three teaching repositories have a separate highlighted card group with language logos.
 - Teaching technology tags use the compact Shields.io README visual language, with Simple Icons brand colors and icons loaded from the official Simple Icons CDN.
 - The education and certification strip uses verified CV data and appears before the contact section. The extracted public CV content is stored in [`data/cv.json`](data/cv.json).
 - The selected professional background and LinkedIn links use information verified from the supplied CV and public LinkedIn profile.
@@ -101,13 +101,15 @@ Teaching cards in `index.html` use the verified instructor entries from `data/cv
 The `#work` section contains the approved project entries supplied for this content pass:
 
 - Spațiu360, a bilingual virtual-tour website for properties and businesses around Brașov.
+- Visit Codlea, a visitor guide with local heritage, hiking routes, places to explore and a photography gallery, featured directly below Spațiu360.
+- Casa Rusu, a six-language Astro restaurant website with a searchable menu, real photography and phone reservations, featured after Visit Codlea. Its card links to the repository until a public site URL is confirmed.
 - unaSquadraFortissimi, a repo-local Codex and Paseo template with agents, skills and workflows.
 - TikTok Cleaner, a browser-console utility for cleaning non-mutual follows.
 - Depurazioneacqua.EU, a service website for water purifier sales, installation and assistance in Rome and Lazio.
 - Photography portfolio for events, portraits, motorcycles and cars.
 - BikeTrain România, the product interface from the `travelBike` repository.
 
-Each project includes a 1280 × 800 desktop homepage screenshot, accurate dimensions to prevent layout shift, descriptive `alt` text, a short factual description and a live or repository URL. The BikeTrain screenshot was captured from the locally running repository app. Do not replace these assets with CSS-built fake screenshots or remote placeholder photography.
+Each project includes a 1280 × 800 desktop homepage screenshot, accurate dimensions to prevent layout shift, descriptive `alt` text, a short factual description and a live or repository URL. The BikeTrain and Casa Rusu screenshots were captured from the locally running repository apps. Do not replace these assets with CSS-built fake screenshots or remote placeholder photography.
 
 The learning category contains `learn-react`, `learn-python` and `learn-csharp`. These are teaching materials created and delivered in Marius's courses, so keep them visually distinct from client-facing work and deployed portfolio sites.
 

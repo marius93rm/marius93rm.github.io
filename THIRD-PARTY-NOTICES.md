@@ -41,3 +41,11 @@ License: <https://tabler.io/license>
 The contact form's asynchronous enhancement loads `@formspree/ajax` from unpkg. The form also retains a standard HTML POST fallback to Formspree if the library is unavailable.
 
 Project source and license: <https://github.com/formspree/formspree-js/tree/main/packages/formspree-ajax>
+
+## Visit Codlea homepage screenshot
+
+`assets/images/projects/visitcodlea-home.webp` is a desktop screenshot of <https://visitcodlea.infy.click/>, resized to 1280 × 800 for the portfolio. The screenshot retains the homepage's credit for the central-square photograph: vutu, CC BY 2.0. Other visible photographs and their sources are documented on the site's [photo credits page](https://visitcodlea.infy.click/credit-foto/).
+
+## Casa Rusu homepage screenshot
+
+`assets/images/projects/casa-rusu-home.webp` was captured from the locally running [Casa Rusu project](https://github.com/marius93rm/casaRusu), commit `313a247`, and resized to 1280 × 800. The restaurant photography and branding are supplied by that project.
