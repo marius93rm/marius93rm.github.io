@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const projectRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const sourcePath = path.join(projectRoot, "index.html");
 const siteUrl = "https://marius93rm.github.io";
-const source = fs.readFileSync(sourcePath, "utf8");
+const source = fs.readFileSync(sourcePath, "utf8").replaceAll("\r\n", "\n");
 
 const localeConfigs = {
   it: {
@@ -576,6 +576,7 @@ for (const [locale, config] of Object.entries(localeConfigs)) {
   localized = localized.replaceAll('src="assets/', 'src="../assets/');
   localized = localized.replaceAll('srcset="assets/', 'srcset="../assets/');
   localized = localized.replace('href="/"', `href="../${locale}/"`);
+  localized = localized.replace('href="/showcase/"', `href="/${locale}/showcase/"`);
 
   const outputDirectory = path.join(projectRoot, locale);
   fs.mkdirSync(outputDirectory, { recursive: true });

@@ -160,6 +160,29 @@ The homepage keeps its important answers in crawlable, visible HTML and includes
 
 ## Local development
 
+### Animated web showcase
+
+The visual showcase lives at `/showcase/`, `/it/showcase/` and `/ro/showcase/`.
+It presents seven projects with three real captured views per project, automatic
+view and project changes, manual selection, a pause control, keyboard navigation,
+touch swipes and an optional cinema view. It reuses the site's local Manrope font
+and light steel-blue palette. No runtime packages, third-party embeds or remote
+screenshot services are needed.
+
+`scripts/build-showcase.mjs` owns the project manifest, translations and generated
+HTML. Run `node scripts/build-showcase.mjs` after changing it, then
+`node scripts/check-showcase.mjs`. Homepage navigation is generated separately by
+`node scripts/build-locales.mjs`.
+
+Autoplay stops when the player leaves the viewport, the document is hidden, or
+the visitor focuses a control. Reduced-motion visitors start with animation
+paused and no transitions. Play explicitly resumes the tour. All projects remain
+real links without JavaScript. BikeTrain links to its repository and its captured
+views are labeled as a local app preview. ThoseGuys and afterElla are omitted at
+the owner's request until their source is available.
+
+See `docs/showcase.md` for visual references, asset provenance and verification.
+
 No package installation is required. Serve the repository over HTTP so relative paths and form behavior match deployment:
 
 ```bash

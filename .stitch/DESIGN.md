@@ -76,6 +76,14 @@ Do not introduce additional accent hues, social-network blue, neon orange, purpl
 
 ## 7. Content rules
 
+### Showcase motion exception (owner request, 2026-10-25)
+
+The standalone `/showcase/` pages intentionally use autoplay, layered screen
+perspective and a small pointer tilt, as requested for the visual portfolio reel.
+This exception does not change the homepage's restrained motion contract. Keep
+the light palette and Manrope. Animate transforms and opacity; provide pause,
+keyboard controls and reduced-motion defaults. Use only real screenshots.
+
 - Use only information supplied or verified by Marius. Public LinkedIn data may supply concise background signals, but it must not be used to infer current employers, clients, project results or personal contact details.
 - Do not invent clients, course titles, reviews, numbers, prices, awards, technologies or project results.
 - Prefer short, concrete sentences over marketing filler.
