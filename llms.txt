@@ -21,6 +21,8 @@
 
 ## Selected work
 
+- [Animated web showcase](https://marius93rm.github.io/showcase/): Seven websites and interfaces presented through real captured views. Also available in Italian and Romanian.
+
 - [Software and web projects](https://marius93rm.github.io/#work): Websites, developer tools and product experiments shaped around clear interfaces, accessibility, performance and maintainable code.
 
 ## Background

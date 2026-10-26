@@ -2111,8 +2111,8 @@ h1 {
   }
 }
 
-/* The navigation collapses at tablet width; content stacks below 768px. */
-@media (max-width: 900px) {
+/* Collapse the full navigation before the additional Showcase link overflows. */
+@media (max-width: 1300px) {
   .primary-nav {
     position: absolute;
     top: calc(100% + 1px);
@@ -2143,7 +2143,7 @@ h1 {
     margin-top: 0.5rem;
   }
 
-  .language-switcher {
+  .primary-nav .language-switcher {
     justify-content: flex-start;
     margin-top: 0.5rem;
     padding: 0.5rem 0 0;
@@ -2192,6 +2192,13 @@ h1 {
     display: none;
   }
 
+  html:not(.js) .nav-shell {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
   .hero-grid {
     gap: 3rem;
   }
